@@ -49,7 +49,34 @@
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
+		<style>
+			@media only screen and (max-width: 768px) {
 
+/* Target all paragraphs within the container class */
+.container p {
+  text-align:center !important;
+  
+  word-spacing: -0.5px; /* Adjust value as needed */
+}
+
+/* Target specific headings within the container class */
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  text-align: center !important;
+}
+.custom-footer-column-logo {
+    display: flex; /* Enable flexbox for the column */
+    justify-content: center; /* Center content horizontally */
+    align-items: center !important; /* Center content vertically */
+  }
+
+}
+		</style>
+		
 
 	</head>
 
