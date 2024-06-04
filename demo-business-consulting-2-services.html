@@ -183,7 +183,7 @@
 
 			<div role="main" class="main">
 
-				<section class="page-header page-header-modern custom-page-header bg-color-quaternary">
+				<section class="page-header page-header-modern custom-page-header bg-color-quaternary" style="background-color: #b6be83 !important;">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -243,7 +243,7 @@
 						<div class="row mt-2 pt-3 justify-content-between">
 							<div class="col-lg-5 text-color-light">
 								<h4 class="text-primary text-3 font-weight-bold mb-2">GET IN TOUCH</h4>
-								<h3 class="mb-3 text-color-light">Feel Free To Contact Us.<br>Feel Free To Enquire!</h3>
+								<h2 class="mb-3 text-color-light"><strong>Feel Free To Contact Us.<br>Feel Free To Enquire!</strong></h2>
 								<!-- <p class="mb-4 pb-2 text-color-light opacity-7">We appreciate your interest in Simpra Foods Goods and Wholesales. Please complete the form, and one of our staff will get back to you as soon as possible.</p> -->
 
 								<!-- <div class="d-block pb-4">
@@ -261,8 +261,8 @@
 									</p>
 								</div> -->
 
-								<div class="d-block pb-4">
-									<p class="text-uppercase text-2 font-weight-bold mb-0 text-color-light opacity-7" style="margin-top: 100px;">Corporate HQ</p>
+								<div class="d-block pb-4" style="margin-top: 50px;">
+									<p class="text-uppercase text-2 font-weight-bold mb-0 text-color-light opacity-7" style="margin-top: 100px;font-size: 40px;">Simpra Foods Goods & Wholesales</p>
 									<p class="p-relative bottom-4 text-color-light">
 										12345 Porto Blvd.<br>Suite 1500<br>Los Angeles, California 90000
 									</p>
@@ -280,7 +280,7 @@
 										<h3 class="mb-3 text-5">Enter Details in This Form:</h3>
 										<p class="mb-4">We appreciate your interest in Simpra Foods Goods and Wholesales. Please complete the form below, and one of our staff will get back to you as soon as possible.</p>
 <!-- checkerr -->
-<form class="contact-form" action="contact-form.php" method="POST">
+<form class="contact-form" id="contactForm">
     <div class="contact-form-success alert alert-success d-none mt-4">
         <strong>Success!</strong> Your message has been sent to us.
     </div>
@@ -392,13 +392,46 @@
 
     <div class="row pt-2">
         <div class="form-group col">
-            <input type="submit" value="Submit Form" class="btn btn-modern btn-primary font-weight-bold border-0 py-3 px-5" data-loading-text="Loading...">
+            <input type="submit" value="Submit Form" class="btn btn-modern btn-primary font-weight-bold border-0 py-3 px-5" data-loading-text="Loading..."id="submitButton">
         </div>
     </div>
 </form>
 
-
-											
+<!-- checker -->
+<script>
+	const form = document.getElementById('contactForm');
+	const submitButton = document.getElementById('submitButton');
+  
+	submitButton.addEventListener('click', (event) => {
+	  event.preventDefault(); // Prevent default form submission
+  
+	  const formData = new FormData(form);
+	  const data = {};
+  
+	  // Loop through form data and convert to object
+	  for (const [key, value] of formData.entries()) {
+		data[key] = value;
+	  }
+  
+	  try {
+		// Save form data to local storage
+		localStorage.setItem('formData', JSON.stringify(data));
+  
+		// Display success message
+		const successAlert = document.querySelector('.contact-form-success');
+		successAlert.classList.remove('d-none');
+  
+		// Clear the form after successful save (optional)
+		form.reset();
+	  } catch (error) {
+		// Display error message if local storage fails
+		const errorAlert = document.querySelector('.contact-form-error');
+		errorAlert.classList.remove('d-none');
+		console.error('Error saving form data:', error);
+	  }
+	});
+  </script>
+											<!-- till here -->
 									</div>
 								</div>
 							</div>
@@ -408,39 +441,9 @@
 
 
 
-				<!-- checker for storage -->
+			
 
-				<script>
-					document.addEventListener('DOMContentLoaded', function() {
-						// Get the form element
-						const form = document.querySelector('.contact-form');
 				
-						// Add event listener for form submission
-						form.addEventListener('submit', function(event) {
-							// Prevent the default form submission behavior
-							event.preventDefault();
-				
-							// Get form data
-							const formData = new FormData(form);
-				
-							// Convert form data to JSON
-							const jsonData = {};
-				
-							for (const [key, value] of formData.entries()) {
-								jsonData[key] = value;
-							}
-				
-							// Save form data to local storage
-							localStorage.setItem('formData', JSON.stringify(jsonData));
-				
-							// Display success message (optional)
-							const successMessage = document.querySelector('.contact-form-success');
-							successMessage.classList.remove('d-none');
-				
-							// Optional: You can redirect to a thank you page or perform any other action here
-						});
-					});
-				</script>
 				
 					<!-- <div class="row align-items-center">
 						<div class="col-lg-9">
