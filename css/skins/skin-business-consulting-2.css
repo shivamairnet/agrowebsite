@@ -1,11 +1,11 @@
 .bg-color-primary-darken-1 {
-	background-color: #b6be83 !important;
+	background-color: #50C4ED !important;
 }
 
 @media (min-width: 992px) {
 	#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a,
 	#header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
-		color: #265713;
+		color: #0C72B8;
 	}
 }
 
@@ -44,7 +44,7 @@ a:active {
 
 html .text-color-primary,
 html .text-primary {
-	color: #e8465f !important;
+	color: #FBA834 !important;
 }
 
 html .text-color-hover-primary:hover,
@@ -54,7 +54,7 @@ html .text-hover-primary:hover {
 
 html .text-color-secondary,
 html .text-secondary {
-	color: #26761f !important;
+	color: #0C72B8  !important;
 }
 
 html .text-color-hover-secondary:hover,
@@ -94,7 +94,7 @@ html .text-hover-dark:hover {
 
 html .text-color-light,
 html .text-light {
-	color: black !important;
+	color: white !important;
 }
 
 html .text-color-hover-light:hover,
@@ -447,7 +447,7 @@ html .svg-stroke-color-hover-light svg:hover polygon {
 
 html .bg-color-primary,
 html .bg-primary {
-	background-color: #265713 !important;
+	background-color: #0C72B8 !important;
 }
 
 html .bg-color-hover-primary:hover,
@@ -473,7 +473,7 @@ html .bg-color-hover-before-primary:before:hover {
 
 html .bg-color-secondary,
 html .bg-secondary {
-	background-color: #26761f !important;
+	background-color: #0C72B8  !important;
 }
 
 html .bg-color-hover-secondary:hover,
@@ -551,7 +551,7 @@ html .bg-color-hover-before-quaternary:before:hover {
 
 html .bg-color-dark,
 html .bg-dark {
-	background-color: #1c5713 !important;
+	background-color: #0C72B8  !important;
 }
 
 html .bg-color-hover-dark:hover,
@@ -1107,7 +1107,7 @@ html .overlay-color-light:not(.no-skin):before {
 }
 
 html .btn-primary {
-	background-color: #e8465f;
+	background-color: #FBA834;
 	border-color: #e8465f #e8465f #df1c3a;
 	color: #FFF;
 	--color: #e8465f;

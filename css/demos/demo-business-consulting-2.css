@@ -367,7 +367,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		content: '';
 		position: absolute;
 		background-color: #fafafc;
-		top: -75px;
+		top: -100px;
 		width: 200%;
 		z-index: 21;
 		height: 75px;
@@ -384,7 +384,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		content: '';
 		position: absolute;
 		background-color: #fafafc;
-		bottom: -75px;
+		bottom: -100px;
 		width: 200%;
 		z-index: 21;
 		height: 75px;
@@ -588,7 +588,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		position: absolute;
 		display: block;
 		background-color: #fafafc;
-		top: -75px;
+		top: -100px;
 		width: 200%;
 		z-index: 21;
 		height: 75px;
@@ -743,7 +743,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		content: '';
 		position: absolute;
 		background-color: #fafafc;
-		top: -75px;
+		top: -100px;
 		width: 200%;
 		z-index: 21;
 		height: 75px;
@@ -760,7 +760,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		content: '';
 		position: absolute;
 		background-color: #fafafc;
-		bottom: -75px;
+		bottom: -100px;
 		width: 200%;
 		z-index: 21;
 		height: 75px;
@@ -797,7 +797,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		position: absolute;
 		display: block;
 		background-color: #fafafc;
-		top: -75px;
+		top: -100px;
 		width: 200%;
 		z-index: 21;
 		height: 75px;
