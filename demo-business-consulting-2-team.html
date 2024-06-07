@@ -80,6 +80,27 @@
     align-items: center !important; /* Center content vertically */
   }
 }
+
+.animated-text{
+ 
+ background: linear-gradient(90deg, #FBA834, #0C72B8 ,#50C4ED,#FBA834);
+ background-size: 200% 200%;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+ 0% {
+   background-position: 0% 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+   background-position: 0% 50%;
+ }
+}
 </style>
 	</head>
 
@@ -221,9 +242,13 @@
 				<section class="page-header page-header-modern custom-page-header bg-color-quaternary" style="background-color: #b6be83 !important;">
 					<div class="container" >
 						<div class="row">
+							<div class="animated-text">
 							<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
 								<h1 class="font-weight-bold text-9 text-color-secondary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100">Products</h1>
 							</div>
+						</div>
+
+
 							<div class="col-md-4 order-1 order-md-2 align-self-center">
 								<ul class="breadcrumb d-block text-md-end appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
 									<li><a href="#" style="color:#265713">Home</a></li>
@@ -492,9 +517,9 @@
 				</div>
 				<div class="footer-copyright container bg-color-quaternary">
 					<div class="row">
-						<div class="col-lg-12 text-center m-0" style="color:#0C72B8">
+						<div class="col-lg-12 text-center m-0" style="color:black">
 							<!-- <p class="text-color-grey">Porto Business Consulting. ©  2023.  All Rights Reserved</p> -->
-							<span> <strong>Developed By :</strong> <a href="https://ascentialabs.com/"><strong> AscentiaLabs</strong></a></span>
+							<span> <strong>Developed By :</strong> <a href="https://ascentialabs.com/" style="color: #0C72B8;"><strong> AscentiaLabs</strong></a></span>
 						</div>
 					</div>
 				</div>

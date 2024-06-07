@@ -1108,7 +1108,7 @@ html .overlay-color-light:not(.no-skin):before {
 
 html .btn-primary {
 	background-color: #FBA834;
-	border-color: #e8465f #e8465f #df1c3a;
+	border-color: #FBA834 #FBA834 #FBA834;
 	color: #FFF;
 	--color: #e8465f;
 	--hover: #ec687c;

@@ -85,6 +85,27 @@
   } */
 }
 
+/* Animated text fill effect */
+.animated-text{
+ 
+  background: linear-gradient(90deg, #FBA834, #0C72B8 ,#50C4ED,#FBA834);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 		</style>
 		
@@ -230,7 +251,7 @@
 
 							<!-- Carousel Slide 1 -->
 							<div class="owl-item position-relative overflow-hidden">
-								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/HomePageImages/HomePagelatest1.jpg); background-size: cover; background-position: center;"></div>
+								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/HomePageImages/HomePage1.jpg); background-size: cover; background-position: center;"></div>
 								<div class="container position-relative z-index-3 pb-5 h-100">
 									<div class="row justify-content-center justify-content-lg-start align-items-center pb-5 h-100">
 										<div class="col-sm-9 col-lg-7 text-center text-lg-start pb-5 mb-5">
@@ -245,7 +266,7 @@
 
 							<!-- Carousel Slide 2 -->
 							<div class="owl-item position-relative overflow-hidden">
-								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToRight" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/HomePageImages/hm.jpg); background-size: cover; background-position: center;"></div>
+								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToRight" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/HomePageImages/HomePage2.png); background-size: cover; background-position: center;"></div>
 								<div class="container position-relative z-index-3 pb-5 h-100">
 									<div class="row align-items-center justify-content-center justify-content-lg-end pb-5 h-100">
 										<div class="col-sm-9 col-lg-7 text-center text-lg-start pb-5 mb-5">
@@ -273,7 +294,7 @@
 							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
 								<div class="card border-radius-0 border-0 shadow-none">
 									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<img src="img\HomePageImages\GlobalFoodTradingIcon.png" alt="Strategic Planning" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+										<img src="img/HomePageImages/trade.png" alt="Strategic Planning" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
 										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="text-align: center;">Leading Global Food Trading Company</h4>
 										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" style="text-align: center;">Simpra Foods Goods & Wholesales is a leading global food trading company dedicated to providing seamless access to high-quality food commodities.</p>
 										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">read more +</a> -->
@@ -283,10 +304,11 @@
 							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
 								<div class="card border-radius-0 border-0 shadow-none">
 									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<h3 class="text-center font-weight-semibold text-color-primary">Who We Are And What We Do</h3>
-										<img src="img\HomePageImages\producticon.png" alt="Financial Clean-Up" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+										<h4 class="text-center font-weight-semibold text-color-primary" style="margin-bottom: 25px !important;"><strong>Who We Are And</br> What We Do</strong></h4>
+										<img src="img\HomePageImages\product.png" alt="Financial Clean-Up" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
 										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Our Products</h4>
-										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">With a focus on reliability, efficiency, and sustainability, we offer a diverse range of products including rice, grains, dairy, oils, spices, and more, catering to businesses and communities worldwide.</p>
+										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">With a focus on reliability, efficiency, and sustainability, we offer a diverse range of products 
+											including rice, grains, dairy, oils, spices, and more, catering to businesses and communities worldwide.</p>
 										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">read more +</a> -->
 									</div>
 								</div>
@@ -294,7 +316,7 @@
 							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
 								<div class="card border-radius-0 border-0 shadow-none">
 									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1 border-end-0">
-										<img src="img\HomePageImages\quality-assuranceicon.png" alt="Cash Flow Planning" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+										<img src="img\HomePageImages\quality-assurance.png" alt="Cash Flow Planning" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
 										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Quality Assurance</h4>
 										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100">At Simpra Foods Goods & Wholesales, we ensure top-quality products with rigorous controls at every supply chain stage</p>
 										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">read more +</a> -->
@@ -311,7 +333,10 @@
 						<div class="row justify-content-end align-items-center h-100">
 							<div class="col-lg-5 position-relative bg-color-light z-index-1 col-our-services-text">
 								<p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Our Goal</p>
-								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Revolutionizing Agriculture on a Global Scale!</h2>
+								<!-- <h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Revolutionizing Agriculture on a Global Scale!</h2> -->
+								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+									Revolutionizing Agriculture on a Global Scale!
+								  </h2>
 								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Our goals revolve around redefining global food trading by ensuring unparalleled access to essential food commodities, driving innovation in 
 									sourcing and distribution, fostering meaningful partnerships, and promoting sustainability throughout our operations.
 									</p>
@@ -378,7 +403,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="border-radius mb-1 border-0 card-accordion-our-services-container">
+									<!-- <div class="border-radius mb-1 border-0 card-accordion-our-services-container">
 										<div class="card-header py-2 bg-color-quaternary">
 											<h4 class="card-title m-0">
 												<a class="accordion-toggle text-color-tertiary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3Five">
@@ -389,10 +414,10 @@
 										<div id="collapse3Five" class="collapse card-accordion-our-services">
 											<div class="card-body">
 												<p class="mb-0">By fostering a more equitable, resilient, and sustainable food system globally, our services hope to benefit our B2B partners and the communities they support in the long run.</p>
-												<!-- <a href="demo-business-consulting-2-services.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">read more +</a> -->
+												
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</div>
 
 								<!-- <a href="demo-business-consulting-2-services.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold mt-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">FIND OUT MORE</a> -->
@@ -401,7 +426,7 @@
 					</div>
 				</section>
 
-				<section class="coaching-consulting d-flex p-relative bg-color-light pt-3 pb-3 pt-lg-5 pb-lg-4">
+				<!-- <section class="coaching-consulting d-flex p-relative bg-color-light pt-3 pb-3 pt-lg-5 pb-lg-4">
 					<div class="container">
 						<div class="row justify-content-end py-5">
 							<div class="col-lg-6">
@@ -409,14 +434,14 @@
 								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 custom-letter-spacing-2 custom-text-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Different Projects We Cater At Simpra Foods Goods & Wholesales</h2>
 								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">We at Simpra Foods Goods & Wholesales, aim to transform the way food is sourced, distributed, and enjoyed worldwide, driving mutual success for our business and stakeholders.</p>
 								<p class="mb-4 pb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Our scope of projects encompasses expanding our product range to meet evolving market demands, optimizing supply chain efficiency through technology-driven solutions, enhancing customer engagement and satisfaction through personalized services, and exploring opportunities for growth and innovation in the global food trading industry.</p>
-								<!-- <div class="d-flex align-items-center justify-content-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+								<div class="d-flex align-items-center justify-content-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
 									<div class="circular-bar custom-circular-bar m-0">
 										<div class="circular-bar-chart" data-percent="89" data-plugin-options="{'barColor': '#26761f'}">
 											<strong class="text-5 text-color-tertiary">89%</strong>
 										</div>
 									</div>
 									<h4 class="font-weight-bold text-color-tertiary m-0 ms-3">Successful cases<br/>in 15 years.</h4>
-								</div> -->
+								</div>
 							</div>
 							<div class="col-lg-6 col-coaching-consulting-imgs p-relative">
 								<div class="card border-radius-0 box-shadow-1 border-0 p-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
@@ -431,7 +456,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 
 
 <!-- whatsapp cta -->
@@ -570,6 +595,78 @@
 							</div>
 						<!-- </a> -->
 					</div>
+					<div>
+						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
+							<div class="card border-0">
+								<div class="card-img-top position-relative overlay">
+									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
+										<div class="custom-crooked-line">
+											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
+										</div>
+									</div>
+									<img src="img\HomePageImages\Fertilizers.jpg" class="img-fluid" alt="John Doe" />
+								</div>
+								<div class="card-body">
+									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Fertilizers</h4>
+									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
+								</div>
+							</div>
+						<!-- </a> -->
+					</div>
+					<div>
+						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
+							<div class="card border-0">
+								<div class="card-img-top position-relative overlay">
+									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
+										<div class="custom-crooked-line">
+											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
+										</div>
+									</div>
+									<img src="img\HomePageImages\Confectionery.jpg" class="img-fluid" alt="John Doe" />
+								</div>
+								<div class="card-body">
+									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Confectionery</h4>
+									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
+								</div>
+							</div>
+						<!-- </a> -->
+					</div>
+					<div>
+						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
+							<div class="card border-0">
+								<div class="card-img-top position-relative overlay">
+									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
+										<div class="custom-crooked-line">
+											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
+										</div>
+									</div>
+									<img src="img\HomePageImages\PetroChemicals.jpg" class="img-fluid" alt="John Doe" />
+								</div>
+								<div class="card-body">
+									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Petro Chemicals</h4>
+									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
+								</div>
+							</div>
+						<!-- </a> -->
+					</div>
+					<div>
+						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
+							<div class="card border-0">
+								<div class="card-img-top position-relative overlay">
+									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
+										<div class="custom-crooked-line">
+											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
+										</div>
+									</div>
+									<img src="img\HomePageImages\Coffee.jpg" class="img-fluid" alt="John Doe" />
+								</div>
+								<div class="card-body">
+									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Coffee</h4>
+									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
+								</div>
+							</div>
+						<!-- </a> -->
+					</div>
 					<!-- <div>
 						<a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
 							<div class="card border-0">
@@ -596,7 +693,7 @@
 				<!-- section slider inserted here -->
 <!-- benefits section -->
 <section class="section section-height-4 section-with-shape-divider position-relative bg-dark border-0 m-0">
-	<div class="shape-divider shape-divider-reverse-x z-index-3" style="height: 102px;">
+	<div class="shape-divider shape-divider-reverse-x z-index-3" style="height: 102px; background-color:#0C72B8;">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 102" preserveAspectRatio="xMinYMin">
 			<polygon fill="#F3F3F3" points="0,65 220,35 562,63 931,10 1410,68 1920,16 1920,103 0,103 "/>
 			<polygon fill="#EDEDED" points="0,82 219,51 562,78 931,26 1409,83 1920,32 1920,103 0,103 "/>
@@ -606,7 +703,7 @@
 	<div class="container position-relative z-index-3 pt-5 mt-5">
 		<div class="row align-items-center">
 			<div class="col-lg-6">
-				<h2 class="custom-text-background custom-big-font-size-1 text-15 font-weight-bold float-end clearfix line-height-1 lazyload pe-xl-5 me-3 mb-0 d-none d-lg-block" style="color: black;"
+				<h2 class="custom-text-background custom-big-font-size-1 text-15 font-weight-bold float-end clearfix line-height-1 lazyload pe-xl-5 me-3 mb-0 d-none d-lg-block" style="color:#FBA834;"
 				 data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.6, 'transition': true, 'horizontal': true, 'transitionDuration': 1000, 'isInsideSVG': true}">WHY  US</h2>
 			</div>
 			<div class="col-lg-6">
@@ -802,7 +899,7 @@
 
 			</div>
 
-			<footer id="footer" class="m-0 border-0 bg-color-quaternary overflow-hidden">
+			<footer id="footer" class="m-0 border-0 bg-color-quaternary overflow-hidden" style="background-color: white !important;">
 				<div class="container">
 					<div class="row py-5 custom-row-footer">
 						<div class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
@@ -903,11 +1000,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer-copyright container bg-color-quaternary">
+				<div class="footer-copyright container bg-color-quaternary" style="background-color: white !important;">
 					<div class="row">
-						<div class="col-lg-12 text-center m-0" style="color:#0C72B8">
+						<div class="col-lg-12 text-center m-0" style="color:black">
 							<!-- <p class="text-color-grey">Porto Business Consulting. ©  2023.  All Rights Reserved</p> -->
-							<span> <strong>Developed By :</strong> <a href="https://ascentialabs.com/"><strong> AscentiaLabs</strong></a></span>
+							<span> <strong>Developed By :</strong> <a href="https://ascentialabs.com/" style="color: #0C72B8;"><strong> AscentiaLabs</strong></a></span>
 						</div>
 					</div>
 				</div>

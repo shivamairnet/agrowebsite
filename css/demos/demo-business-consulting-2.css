@@ -113,13 +113,13 @@ html[dir="rtl"] .slider-container .line-pre-title {
 }
 
 .card-accordion-our-services-container .card-accordion-our-services {
-		border: 9px solid #b6be83;
+		border: 5px solid #50C4ED;
 		border-top: 0;
 		margin: -2px -1px 0 -1px;
 }
 .card-accordion-our-services-container .card-header {
-    background-color: #b6be83 !important;
-    border-color: #b6be83;
+    background-color: #50C4ED !important;
+    border-color: #50C4ED;
 }
 .custom-cards {
 		position: relative;
@@ -479,7 +479,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		position: absolute;
 		display: block;
 		background-color: #fafafc;
-		top: -78px;
+		top: -100px;
 		left: -10px;
 		width: 200%;
 		z-index: 21;
@@ -492,7 +492,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		position: absolute;
 		display: block;
 		background-color: #fafafc;
-		bottom: -78px;
+		bottom: -100px;
 		left: -10px;
 		width: 200%;
 		z-index: 21;
