@@ -49,12 +49,12 @@ html .text-primary {
 
 html .text-color-hover-primary:hover,
 html .text-hover-primary:hover {
-	color: #e8465f !important;
+	color: #FBA834 !important;
 }
 
 html .text-color-secondary,
 html .text-secondary {
-	color: white  !important;
+	color: #0C72B8  !important;
 }
 
 html .text-color-hover-secondary:hover,
@@ -1095,68 +1095,68 @@ html .overlay-color-light:not(.no-skin):before {
 }
 
 .btn-link {
-	color: #e8465f;
+	color: #FBA834;
 }
 
 .btn-link:hover {
-	color: #eb5d73;
+	color: #FBA834;
 }
 
 .btn-link:active {
-	color: #e52f4b;
+	color:#FBA834;
 }
 
 html .btn-primary {
 	background-color: #FBA834;
 	border-color: #FBA834 #FBA834 #FBA834;
 	color: #FFF;
-	--color: #e8465f;
-	--hover: #ec687c;
-	--disabled: #e8465f;
-	--active: #e42442;
+	--color: #FBA834;
+	--hover: #FBA834;
+	--disabled:#FBA834;
+	--active: #FBA834;
 }
 
 html .btn-primary:hover,
 html .btn-primary.hover {
-	border-color: #ee7386 #ee7386 #e8465f;
+	border-color:#FBA834#FBA834#FBA834;
 	color: #FFF;
 }
 
 html .btn-primary:hover:not(.bg-transparent),
 html .btn-primary.hover:not(.bg-transparent) {
-	background-color: #ec687c;
+	background-color: #FBA834;
 }
 
 html .btn-primary:focus,
 html .btn-primary.focus {
-	border-color: #df1c3a #df1c3a #b2162e;
+	border-color:#FBA834#FBA834#FBA834 ;
 	color: #FFF;
 	box-shadow: 0 0 0 3px rgba(232, 70, 95, 0.5);
 }
 
 html .btn-primary:focus:not(.bg-transparent),
 html .btn-primary.focus:not(.bg-transparent) {
-	background-color: #e42442;
+	background-color: #FBA834;
 }
 
 html .btn-primary.disabled,
 html .btn-primary:disabled {
-	border-color: #e8465f #e8465f #df1c3a;
+	border-color: #FBA834#FBA834#FBA834;
 }
 
 html .btn-primary.disabled:not(.bg-transparent),
 html .btn-primary:disabled:not(.bg-transparent) {
-	background-color: #e8465f;
+	background-color: #FBA834;
 }
 
 html .btn-primary:active,
 html .btn-primary.active {
-	border-color: #df1c3a #df1c3a #b2162e !important;
+	border-color:#FBA834#FBA834#FBA834 !important;
 }
 
 html .btn-primary:active:not(.bg-transparent),
 html .btn-primary.active:not(.bg-transparent) {
-	background-color: #e42442 !important;
+	background-color:#FBA834 !important;
 	background-image: none !important;
 }
 

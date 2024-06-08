@@ -106,6 +106,26 @@
     background-position: 0% 50%;
   }
 }
+.animated-text1{
+ 
+ background: linear-gradient(90deg, #FBA834, #0C72B8 ,#50C4ED,#FBA834);
+ background-size: 200% 200%;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+ 0% {
+   background-position: 0% 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+   background-position: 0% 50%;
+ }
+}
 
 		</style>
 		
@@ -290,7 +310,11 @@
 				<section class="bg-color-light p-relative z-index-2">
 					
 					<div class="cards custom-cards custom-cards-slider h-auto pt-5 pb-4 container appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+						
 						<div class="row bg-color-light cards-container d-flex justify-content-center justify-content-xl-between w-100 mb-5 mx-0 box-shadow-1 p-relative top-0">
+							<div>
+								<h3 class="text-center font-weight-semibold text-color-primary" style="margin-top: 20px;"  ><strong>Who We Are And What We Do</strong></h3>
+							</div>
 							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
 								<div class="card border-radius-0 border-0 shadow-none">
 									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
@@ -302,12 +326,14 @@
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
+								
 								<div class="card border-radius-0 border-0 shadow-none">
+									
 									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<h4 class="text-center font-weight-semibold text-color-primary" ><strong>Who We Are And</br> What We Do</strong></h4>
+										<!-- <h4 class="text-center font-weight-semibold text-color-primary" ><strong>Who We Are And</br> What We Do</strong></h4> -->
 										<img src="img\HomePageImages\product.png" alt="Financial Clean-Up" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
 										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Our Products</h4>
-										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">With a focus on reliability, efficiency, and sustainability, we offer a diverse range of products including rice, grains, dairy, oils, spices, coffee, confectionery, petrochemicals, fertilizers with many other products, catering to businesses worldwide. 
+										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">With a focus on reliability, efficiency, and sustainability, we offer a diverse range of products including rice, grains, dairy, oils, spices, coffee, confectionery, petrochemicals, fertilizers with many other products. 
 											</p>
 										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">read more +</a> -->
 									</div>
@@ -337,7 +363,8 @@
 								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
 									Revolutionizing Food Trade On A Global Scale!
 								  </h2>
-								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Our goal revolves around redefining global food trading by ensuring unparalleled access to essential agro industry commodities and distribution, fostering meaningful partnerships with business, and promoting sustainability throughout our operations.									sourcing and distribution, fostering meaningful partnerships, and promoting sustainability throughout our operations.
+								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Our goal revolves around redefining global food trading by ensuring unparalleled access to essential agro industry commodities and distribution,
+									 fostering meaningful partnerships with business, and promoting sustainability throughout our operations.									
 									</p>
 								<!-- <p class="mb-4 pb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet.</p> -->
 								<div class="accordion accordion-sm appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" id="accordionServices">
@@ -408,8 +435,8 @@
 	<div class="container mt-4">
 		<div class="row justify-content-center">
 			<div class="col-lg-11 col-xl-10 text-center">
-				<h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Products</h2>
-				<h3 class="text-9 line-height-3 text-transform-none font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Explore Our Product Catalog</h3>
+				<h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" style="font-size: xx-large !important;"> <strong>Products</strong></h2>
+				<h3 class="text-9 line-height-3 text-transform-none font-weight-semibold mb-4 appear-animation animated-text1" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Explore Our Product Catalog</h3>
 				<p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"> With a focus on reliability, efficiency, and sustainability, we offer a diverse range of products including rice, grains, dairy, oils, spices, and more, catering to businesses and communities worldwide.
 					
 					</p>
@@ -612,7 +639,7 @@
 		<div class="row justify-content-between" >
 			<div class="col-xl-5">
 				<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>Elevate Your Food Trading Experience With</p>
-				<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"> Simpra Foods Goods Wholesalers</h2>
+				<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"> Simpra Foods</br> Goods Wholesalers</h2>
 				<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today!</p>
 			</div>
 			<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
@@ -767,7 +794,7 @@
 						<div class="row justify-content-between" >
 							<div class="col-xl-5">
 								<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>Elevate Your Food Trading Experience With</p>
-								<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"> Simpra Foods Goods Wholesalers</h2>
+								<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"> Simpra Foods</br> Goods Wholesalers</h2>
 								<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today!</p>
 							</div>
 							<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
