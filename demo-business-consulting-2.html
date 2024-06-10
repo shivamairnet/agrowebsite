@@ -6,10 +6,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Demo Business Consulting 2 | Porto - Multipurpose Website Template</title>	
+		<title>Agro Website</title>	
 
-		<meta name="keywords" content="WebSite Template" />
-		<meta name="description" content="Porto - Multipurpose Website Template">
+		<meta name="keywords" content="WebSite" />
+		<meta name="description" content="Website">
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
@@ -74,6 +74,7 @@
   text-align: center !important;
 }
 
+
 .custom-footer-column-logo {
     display: flex; /* Enable flexbox for the column */
     justify-content: center; /* Center content horizontally */
@@ -106,6 +107,59 @@
     background-position: 0% 50%;
   }
 }
+.animated-text1{
+ 
+ background: linear-gradient(90deg, #FBA834, #0C72B8 ,#50C4ED,#FBA834);
+ background-size: 200% 200%;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+ 0% {
+   background-position: 0% 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+   background-position: 0% 50%;
+ }
+}
+
+.text-3-5:hover {
+			color: #FBA834; /* Change to desired hover color */
+		}
+
+		.text-3-5 {
+			transition: color 0.3s ease-in-out;
+		}
+.no-uppercase {
+            text-transform: none; /* Ensure text is displayed as typed */
+        }
+
+
+		
+@media only screen and (max-width: 768px) {
+
+
+.container p {
+  text-align:center !important;
+  
+  word-spacing: -0.5px; /* Adjust value as needed */
+}
+
+/* Target specific headings within the container class */
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  text-align: center !important;
+}}
+
 
 		</style>
 		
@@ -290,7 +344,11 @@
 				<section class="bg-color-light p-relative z-index-2">
 					
 					<div class="cards custom-cards custom-cards-slider h-auto pt-5 pb-4 container appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+						
 						<div class="row bg-color-light cards-container d-flex justify-content-center justify-content-xl-between w-100 mb-5 mx-0 box-shadow-1 p-relative top-0">
+							<div>
+								<h3 class="text-center font-weight-semibold text-color-primary no-uppercase" style="margin-top: 20px;"><strong>Who We Are And What We Do</strong></h3>
+							</div>
 							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
 								<div class="card border-radius-0 border-0 shadow-none">
 									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
@@ -302,12 +360,14 @@
 								</div>
 							</div>
 							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
+								
 								<div class="card border-radius-0 border-0 shadow-none">
+									
 									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<h4 class="text-center font-weight-semibold text-color-primary" ><strong>Who We Are And</br> What We Do</strong></h4>
+										<!-- <h4 class="text-center font-weight-semibold text-color-primary" ><strong>Who We Are And</br> What We Do</strong></h4> -->
 										<img src="img\HomePageImages\product.png" alt="Financial Clean-Up" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
 										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Our Products</h4>
-										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">With a focus on reliability, efficiency, and sustainability, we offer a diverse range of products including rice, grains, dairy, oils, spices, coffee, confectionery, petrochemicals, fertilizers with many other products, catering to businesses worldwide. 
+										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">With a focus on reliability, efficiency, and sustainability, we offer a diverse range of products including rice, grains, dairy, oils, spices, coffee, confectionery, petrochemicals, fertilizers with many other products. 
 											</p>
 										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">read more +</a> -->
 									</div>
@@ -318,7 +378,7 @@
 									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1 border-end-0">
 										<img src="img\HomePageImages\quality-assurance.png" alt="Cash Flow Planning" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
 										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Quality Assurance</h4>
-										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100">At SFGW, we ensure top-quality products with rigorous controls at every supply chain stage.</p>
+										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100">We source products from trusted suppliers who meet the highest industry standards. Our rigorous quality control includes thorough inspections and testing at every stage, from procurement to delivery.</p>
 										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">read more +</a> -->
 									</div>
 								</div>
@@ -337,7 +397,8 @@
 								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
 									Revolutionizing Food Trade On A Global Scale!
 								  </h2>
-								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Our goal revolves around redefining global food trading by ensuring unparalleled access to essential agro industry commodities and distribution, fostering meaningful partnerships with business, and promoting sustainability throughout our operations.									sourcing and distribution, fostering meaningful partnerships, and promoting sustainability throughout our operations.
+								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Our goal revolves around redefining global food trading by ensuring unparalleled access to essential agro industry commodities and distribution,
+									 fostering meaningful partnerships with business, and promoting sustainability throughout our operations.									
 									</p>
 								<!-- <p class="mb-4 pb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet.</p> -->
 								<div class="accordion accordion-sm appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" id="accordionServices">
@@ -372,21 +433,7 @@
 											</div>
 										</div>
 									</div>
-									<!-- <div class="border-radius mb-1 border-0 card-accordion-our-services-container">
-										<div class="card-header py-2 bg-color-quaternary">
-											<h4 class="card-title m-0">
-												<a class="accordion-toggle text-color-tertiary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3Three">
-													Innovation Integration
-												</a>
-											</h4>
-										</div>
-										<div id="collapse3Three" class="collapse card-accordion-our-services">
-											<div class="card-body">
-												<p class="mb-0">We welcome innovation as the engine propelling agricultural advancement. Through the integration of state-of-the-art technologies, we improve transparency, efficiency, and productivity across the whole agricultural value chain.</p>
-												
-											</div>
-										</div>
-									</div> -->
+									
 									<div class="border-radius mb-1 border-0 card-accordion-our-services-container">
 										<div class="card-header py-2 bg-color-quaternary">
 											<h4 class="card-title m-0">
@@ -402,21 +449,7 @@
 											</div>
 										</div>
 									</div>
-									<!-- <div class="border-radius mb-1 border-0 card-accordion-our-services-container">
-										<div class="card-header py-2 bg-color-quaternary">
-											<h4 class="card-title m-0">
-												<a class="accordion-toggle text-color-tertiary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3Five">
-													Global Impact
-												</a>
-											</h4>
-										</div>
-										<div id="collapse3Five" class="collapse card-accordion-our-services">
-											<div class="card-body">
-												<p class="mb-0">By fostering a more equitable, resilient, and sustainable food system globally, our services hope to benefit our B2B partners and the communities they support in the long run.</p>
-												
-											</div>
-										</div>
-									</div> -->
+									
 								</div>
 
 								<!-- <a href="demo-business-consulting-2-services.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold mt-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">FIND OUT MORE</a> -->
@@ -424,42 +457,6 @@
 						</div>
 					</div>
 				</section>
-
-				<!-- <section class="coaching-consulting d-flex p-relative bg-color-light pt-3 pb-3 pt-lg-5 pb-lg-4">
-					<div class="container">
-						<div class="row justify-content-end py-5">
-							<div class="col-lg-6">
-								<p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span> Our Projects</p>
-								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 custom-letter-spacing-2 custom-text-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Different Projects We Cater At Simpra Foods Goods & Wholesales</h2>
-								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">We at Simpra Foods Goods & Wholesales, aim to transform the way food is sourced, distributed, and enjoyed worldwide, driving mutual success for our business and stakeholders.</p>
-								<p class="mb-4 pb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Our scope of projects encompasses expanding our product range to meet evolving market demands, optimizing supply chain efficiency through technology-driven solutions, enhancing customer engagement and satisfaction through personalized services, and exploring opportunities for growth and innovation in the global food trading industry.</p>
-								<div class="d-flex align-items-center justify-content-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
-									<div class="circular-bar custom-circular-bar m-0">
-										<div class="circular-bar-chart" data-percent="89" data-plugin-options="{'barColor': '#26761f'}">
-											<strong class="text-5 text-color-tertiary">89%</strong>
-										</div>
-									</div>
-									<h4 class="font-weight-bold text-color-tertiary m-0 ms-3">Successful cases<br/>in 15 years.</h4>
-								</div>
-							</div>
-							<div class="col-lg-6 col-coaching-consulting-imgs p-relative">
-								<div class="card border-radius-0 box-shadow-1 border-0 p-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-									<img src="img\HomePageImages\OurProject1.jpg" class="img-fluid border-radius-0" alt="">
-								</div>
-								<div class="card border-radius-0 box-shadow-1 border-0 p-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-									<img src="img\HomePageImages\OurProject2.jpg" class="img-fluid border-radius-0" alt="">
-								</div>
-								<div class="card border-radius-0 box-shadow-1 border-0 p-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-									<img src="img\HomePageImages\ourpojectlatest3.jpg" class="img-fluid border-radius-0" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> -->
-
-
-
-
 
 <!-- slider of products inserted -->
 <section class="section section-height-4 section-with-shape-divider bg-color-grey-scale-1 border-0 pb-5 m-0">
@@ -472,8 +469,8 @@
 	<div class="container mt-4">
 		<div class="row justify-content-center">
 			<div class="col-lg-11 col-xl-10 text-center">
-				<h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Products</h2>
-				<h3 class="text-9 line-height-3 text-transform-none font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Explore Our Product Catalog</h3>
+				<h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" style="font-size: xx-large !important;"> <strong>Products</strong></h2>
+				<h3 class="text-9 line-height-3 text-transform-none font-weight-semibold mb-4 appear-animation animated-text1" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Explore Our Product Catalog</h3>
 				<p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"> With a focus on reliability, efficiency, and sustainability, we offer a diverse range of products including rice, grains, dairy, oils, spices, and more, catering to businesses and communities worldwide.
 					
 					</p>
@@ -705,7 +702,7 @@
 		<div class="row align-items-center">
 			<div class="col-lg-6">
 				<h2 class="custom-text-background custom-big-font-size-1 text-15 font-weight-bold float-end clearfix line-height-1 lazyload pe-xl-5 me-3 mb-0 d-none d-lg-block" style="color:#FBA834;"
-				 data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.6, 'transition': true, 'horizontal': true, 'transitionDuration': 1000, 'isInsideSVG': true}">WHY  US</h2>
+				 data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'horizontal': true, 'transitionDuration': 1000, 'isInsideSVG': true}">WHY  US</h2>
 			</div>
 			<div class="col-lg-6">
 				<!-- <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" >WHY US</h2> -->
@@ -714,35 +711,39 @@
 				<ul class="list ps-0 pe-lg-5 mb-0">
 					<li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
 						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i> 
-						<span class="text-3-5 ps-3">Diverse Product Range</span>
+						<span class="text-3-5 ps-3">Reliable Sourcing: Count on us for consistent and dependable sourcing solutions.</span>
 					</li>
 					<li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">
 						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-						<span class="text-3-5 ps-3">Industry Expertise
+						<span class="text-3-5 ps-3">Integrity in Business: We uphold the highest ethical standards in all our dealings.
 
 						</span>
 					</li>
 					<li class="d-flex align-items-start appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500">
 						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-						<span class="text-3-5 ps-3">Innovative Technology Integration</span>
+						<span class="text-3-5 ps-3">Global Connectivity: Seamlessly connected worldwide to ensure efficient supply chain management.</span>
 
 					</li>
 
 					<li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">
 						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-						<span class="text-3-5 ps-3">Global Market Access
+						<span class="text-3-5 ps-3">Premium Quality: Our products meet rigorous quality standards.
 
 						</span>
 					</li>
 					<li class="d-flex align-items-start appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500">
 						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-						<span class="text-3-5 ps-3">Quality Assurance Standards</span>
+						<span class="text-3-5 ps-3">Certified Suppliers: We collaborate with certified suppliers, ensuring reliability and trustworthiness.</span>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
+
+<!-- grid format -->
+
+<!--  -->
 <!-- till here benefits -->
 
 
@@ -909,7 +910,7 @@
 								</br>© 2024 Simpra Foods Goods & Wholesales.
 								</p>
 						</div>
-						<div class="col-12 col-sm-12 col-lg-9 footer-column">
+						<div class="col-12 col-sm-12 col-lg-9 footer-column" >
 							<div class="d-flex align-items-start align-sm-items-end justify-content-between flex-column h-100 mt-4 mt-sm-0">
 								<div class="d-flex flex-nowrap flex-lg-wrap justify-content-start justify-content-lg-end align-items-start align-items-lg-center w-100 flex-column flex-lg-row mt-4 mt-lg-0 custom-container-info-socials">
 									<ul class="nav nav-pills justify-content-between h-100 mb-4 mb-lg-0">
