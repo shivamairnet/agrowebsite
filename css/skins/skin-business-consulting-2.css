@@ -1,5 +1,5 @@
 .bg-color-primary-darken-1 {
-	background-color: #50C4ED !important;
+	background-color: #0C72B8 !important;
 }
 
 @media (min-width: 992px) {
@@ -447,7 +447,7 @@ html .svg-stroke-color-hover-light svg:hover polygon {
 
 html .bg-color-primary,
 html .bg-primary {
-	background-color: #0C72B8 !important;
+	background-color: #50C4ED !important;
 }
 
 html .bg-color-hover-primary:hover,
@@ -1066,7 +1066,7 @@ html .badge-light {
 }
 
 html .overlay-color-primary:not(.no-skin):before {
-	background-color:#b6be83 !important;
+	background-color:#50C4ED !important;
 }
 
 html .overlay-color-secondary:not(.no-skin):before {

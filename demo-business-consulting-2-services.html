@@ -112,6 +112,30 @@
             /* text-align: center; */
         }		
 
+		.custom-form-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 20px;
+        }
+
+        .custom-form-group .form-label {
+            grid-column: span 2;
+            margin-bottom: 10px;
+        }
+
+        .custom-form-group .form-check {
+            display: flex;
+            align-items: center;
+        }
+
+        .cusom-form-group .form-check-input {
+            margin-right: 10px;
+        }
+
+
+		.custom-form-group .form-check-label {
+            margin-left: 5px; /* Adjust as needed */
+        }
 		</style>
 		
 
@@ -309,7 +333,8 @@
 						<div class="row mt-2 pt-3 justify-content-between">
 							<div class="col-lg-5 text-color-light">
 								<h4 class="text-primary text-3 font-weight-bold mb-2">GET IN TOUCH</h4>
-								<h2 class="mb-3 text-color-light animated-text" style="color: #0C72B8 !important;"><strong>Feel Free To Contact Us.<br>Feel Free To Enquire!</strong></h2>
+								<!-- <h2 class="mb-3 text-color-light animated-text" style="color: #0C72B8 !important;"><strong>Feel Free To Contact Us.<br>Feel Free To Enquire!</strong></h2> -->
+								<h2 class="text-color-light font-weight-bold text-10 negative-ls-05 line-height-1 mb-5 animated-text" style="color:black !important;margin-bottom: 5px !important;">Feel Free To Contact.<br>Feel Free To Enquire!</h2>
 								<!-- <p class="mb-4 pb-2 text-color-light opacity-7">We appreciate your interest in Simpra Foods Goods and Wholesales. Please complete the form, and one of our staff will get back to you as soon as possible.</p> -->
 
 								<!-- <div class="d-block pb-4">
@@ -327,12 +352,12 @@
 									</p>
 								</div> -->
 
-								<div class="d-block pb-4" style="margin-top: 50px;">
+								<!-- <div class="d-block pb-4" style="margin-top: 50px;">
 									<p class="text-uppercase text-2 font-weight-bold mb-0 text-color-light opacity-7" style="margin-top: 100px;font-size: 40px; color:#0C72B8 !important;">Simpra Foods Goods & Wholesales</p>
 									<p class="p-relative bottom-4 text-color-light" style="color: #0C72B8 !important;">
 										12345 Peatland Blvd.<br>Suite 1500<br>Los Angeles, California 90000
 									</p>
-								</div>
+								</div> -->
 
 								<!-- <div class="d-block pb-4">
 									<div id="googlemaps" class="google-map small mt-0 mb-0" style="height: 260px;"></div>
@@ -397,9 +422,10 @@
     </div>
 
     <div class="row">
-        <div class="form-group col-lg-12">
+		
+        <div class="form-group col-lg-12 custom-form-group">
             <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold" style="color: white !important;">Product(s) of Interest</label>
-            <div class="col-lg-6">
+            
 			<div class="form-check">
                 <input class="form-check-input" type="checkbox" value="Rice" id="productRice" name="products[]">
                 <label class="form-check-label" for="productRice">Rice</label>
@@ -420,8 +446,8 @@
                 <input class="form-check-input" type="checkbox" value="Oils" id="productOils" name="products[]">
                 <label class="form-check-label" for="productOils">Spices</label>
             </div>
-			</div>
-			<div class="col-lg-6">
+			
+			
 				<div class="form-check">
 					<input class="form-check-input" type="checkbox" value="Sugar" id="productSugar" name="products[]">
 					<label class="form-check-label" for="productSugar">Sugar</label>
@@ -446,7 +472,7 @@
 					<input class="form-check-input" type="checkbox" value="Others" id="productOthers" name="products[]">
 					<label class="form-check-label" for="productOthers">Others</label>
 				</div>
-		</div>
+		
         </div>
     </div>
 
