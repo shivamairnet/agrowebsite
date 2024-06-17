@@ -50,40 +50,9 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 		<style>
-			@media only screen and (max-width: 768px) {
-
-/* Target all paragraphs within the container class */
-.container p {
-  text-align:justify;
-  
-  word-spacing: -0.5px; /* Adjust value as needed */
-}
-
-/* Target specific headings within the container class */
-.container h1,
-.container h2,
-.container h3,
-.container h4,
-.container h5,
-.container h6 {
-  text-align: center;
-}
-
-/* You can target other elements like product descriptions here */
-.container .col-md-6 p {
-  text-align: center;
-}
-
-.custom-footer-column-logo {
-    display: flex; /* Enable flexbox for the column */
-    justify-content: center; /* Center content horizontally */
-    align-items: center !important; /* Center content vertically */
-  }
-}
-
+			
 .page-header {
-            
-			background-image: url('img/HomePageImages/HeaderImage1.png');
+            background-image: url('img/Header Images/AnimalFodder DarkHeader.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -95,6 +64,23 @@
             /* text-align: center; */
         }		
 
+.row py-3 mt-2 :hover {
+	            color:black;
+    
+}
+/* ul.text-color-light li:hover {
+			color: black; 
+		}
+
+		
+		ul.text-color-light li:hover strong {
+			color: black; 
+		}
+
+		
+		ul.text-color-light li {
+			transition: color 0.3s ease-in-out;
+		} */
 		@media only screen and (max-width: 768px) {
 
 
@@ -112,13 +98,35 @@
 .container h5,
 .container h6 {
   text-align: center !important;
-}}
+}
+
+.custom-footer-column-logo {
+    display: flex; /* Enable flexbox for the column */
+    justify-content: center; /* Center content horizontally */
+    align-items: center !important; /* Center content vertically */
+  }
+}
+
+/* Add this CSS to your stylesheet */
+
+/* Define the glow effect */
+.glow-on-hover:hover {
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Optional: You can define a class for smooth transition effect */
+li {
+    transition: text-shadow 0.3s ease-in-out;
+}
 
 
 		</style>
-
+		
 	</head>
 
+	
 	<body>
 		<div class="body">
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
@@ -185,15 +193,11 @@
 														</a>
 													</li>
 													<li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-about-us.html">
+														<a class="nav-link active" href="demo-business-consulting-2-about-us.html">
 															About Us
 														</a>
 													</li>
-													<!-- <li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-services.html">
-															Services
-														</a>
-													</li> -->
+													
 													<!-- <li class="dropdown-secondary">
 														<a class="nav-link" href="demo-business-consulting-2-cases.html">
 															Cases
@@ -215,7 +219,7 @@
 														</a>
 													</li> -->
 													<li class="dropdown-secondary">
-														<a class="nav-link active" href="demo-business-consulting-2-contact-us.html">
+														<a class="nav-link" href="demo-business-consulting-2-contact-us.html">
 															Contact Us
 														</a>
 													</li>
@@ -254,125 +258,46 @@
 
 			<div role="main" class="main">
 
-				<section class="page-header page-header-modern custom-page-header bg-color-quaternary" style="background-color: #b6be83 !important;">
+				<section class="page-header page-header-modern custom-page-header bg-color-quaternary" >
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-								<h1 class="font-weight-bold text-9 text-color-secondary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;">Contact Us</h1>
+								<h1 class="font-weight-bold text-9 text-color-secondary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;">Animal Fodder</h1>
 							</div>
 							<div class="col-md-4 order-1 order-md-2 align-self-center">
 								<ul class="breadcrumb d-block text-md-end appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
-									<li><a href="#" style="color:white">Home</a></li>
-									<li class="active" style="color:white">Contact Us</li>
+									<li><a href="#"style="color: white;">Home</a></li>
+									<li class="active"style="color: white;">Animal Fodder
+
+                                    </li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="custom-bg-color-lighter-grey">
-					<div class="cards custom-cards h-auto pt-5 pb-4 container appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
-						<div class="row bg-color-light cards-container d-flex justify-content-center justify-content-xl-between w-100 mb-5 mx-0 box-shadow-1 p-relative top-0">
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								<div class="card border-radius-0 border-0 shadow-none">
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Get In Touch</h4>
 
-										<strong class="d-block text-secondary text-4">Work Inquiries</strong>
-										<p class="d-block m-0">(800) 123-4567</p>
-
-										<strong class="d-block text-secondary text-4 pt-4">Careers & Press</strong>
-										<p class="d-block m-0">(800) 123-4568</p>
-
-										<strong class="d-block text-secondary text-4 pt-4">Assistance Hours:</strong>
-										<p class="d-block m-0">Mon - Sat 9:00am - 6:00pm</p>
-										<p class="d-block m-0">Sunday - CLOSED</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								<div class="card border-radius-0 border-0 shadow-none">
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Address and Mail</h4>
-
-										<strong class="d-block text-secondary text-4">Address</strong>
-										<p class="d-block m-0">123 Street Name, City, England</p>
-
-										<strong class="d-block text-secondary text-4 pt-4">E-mail</strong>
-										<p class="d-block m-0">
-											<a class="text-default" href="mailto:business@portotheme.com">business@y.com</a>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								<div class="card border-radius-0 border-0 shadow-none">
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1 border-end-0">
-										<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Social Media</h4>
-										<ul class="social-icons custom-social-icons p-0 pt-3 m-0">
-											<li class="m-0 d-block pb-2 social-icons-instagram">
-												<a class="custom-bg-color-light-grey" href="http://www.instagram.com/" target="_blank" title="Instagram">
-													<i class="fab fa-instagram text-4 font-weight-semibold text-color-secondary"></i>
-												</a>
-											</li>
-											<li class="m-0 d-block pb-2 social-icons-twitter">
-												<a class="custom-bg-color-light-grey" href="http://www.twitter.com/" target="_blank" title="Twitter">
-													<i class="fab fa-twitter text-4 font-weight-semibold text-color-secondary"></i>
-												</a>
-											</li>
-											<li class="m-0 d-block pb-2 social-icons-facebook">
-												<a class="custom-bg-color-light-grey" href="http://www.facebook.com/" target="_blank" title="Facebook">
-													<i class="fab fa-facebook-f text-4 font-weight-semibold text-color-secondary"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
+				<div class="container py-5 mb-3">
+					<div class="row align-items-center">
+						<div class="col-lg-5 pt-3 pt-lg-0 pb-4 pb-lg-0">
+							<div class="card border-radius-0 box-shadow-1 border-0 me-lg-3 p-3 mb-3 mb-lg-0">
+								<img src="img\HomePageImages\AnimalFodder.jpg" class="img-fluid border-radius-0" alt="">
 							</div>
 						</div>
-					</div>
-				</div>
-
-				<div class="container py-5">
-					<div class="row">
-						<div class="col">
-							<p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Get in Touch</p>
-							<h2 class="text-color-secondary font-weight-bold text-capitalize mb-2 custom-letter-spacing-2 custom-text-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: #0C72B8 !important;">Send Us a Message</h2>
-							<p class="mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Have a question, feedback, or need assistance? Our team will get back to you promptly!</p>
-
-							<form class="contact-form custom-form-style-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" action="php/contact-form.php" method="POST">
-								<div class="contact-form-success alert alert-success d-none mt-4">
-									<strong>Success!</strong> Your message has been sent to us.
+						<div class="col-lg-7">
+							<p class="text-4 line-height-9 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">Our product lineup includes high-protein alfalfa meal, nutrient-rich grain mixes, and specialized mineral supplements to ensure balanced nutrition. We also provide custom-blended feed solutions tailored to meet the unique needs of different animal species. Each of our products is formulated using the highest quality ingredients and is tested for efficacy and safety. Whether you are raising dairy cattle, poultry, swine, or horses, our supplements are designed to support optimal growth, immune function, and overall well-being. Additionally, our knowledgeable team is available to offer guidance and support, helping you select the best feeding strategy for your livestock. At Simpra Foods, we are committed to partnering with farmers and livestock owners to promote sustainable and efficient farming practices.
+								</p>
+							<!-- <p class="m-0 p-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">We use innovative logistics and supply chain management to streamline operations, lowering costs and improving delivery times. Our devoted team collaborates closely with suppliers and customers to understand their requirements and create unique solutions, resulting in solid, long-term relationships.</p> -->
+							<!-- <div class="counters custom-counters mt-5 d-flex">
+								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+									<strong data-to="240" data-append="+">0</strong>
+									<label class="text-color-primary font-weight-bold">Satisfied Clients</label>
 								</div>
-
-								<div class="contact-form-error alert alert-danger d-none mt-4">
-									<strong>Error!</strong> There was an error sending your message.
-									<span class="mail-error-message text-1 d-block"></span>
+								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
+									<strong data-to="2000" data-append="+">0</strong>
+									<label class="text-color-primary font-weight-bold">Successfull Cases</label>
 								</div>
-								<div class="row">
-									<div class="form-group col-lg-6">
-										<input type="text" placeholder="Your Name" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" required>
-									</div>
-									<div class="form-group col-lg-6">
-										<input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" required>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<input placeholder="Subject" type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" required>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<textarea placeholder="Your Message..." maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" required></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<input type="submit" value="Send Message" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold" data-loading-text="Loading...">
-									</div>
-								</div>
-							</form>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -381,9 +306,9 @@
 					<div class="container">
 						<div class="row justify-content-between">
 							<div class="col-xl-5">
-								<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>Elevate Your Food Trading Experience With</p>
-								<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;">Simpra Foods</br> Goods Wholesalers</h2>
-								<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today! </p>
+								<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"></span>Elevate Your Food Trading Experience With</p>
+								<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;">Simpra Foods </br>Goods Wholesalers</h2>
+								<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today!</p>
 							</div>
 							<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
 								<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
@@ -524,7 +449,6 @@
 
 		<!-- Theme Custom -->
 		<script src="js/custom.js"></script>
-		
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>

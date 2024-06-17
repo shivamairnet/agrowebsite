@@ -517,7 +517,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 
 @media (min-width: 1200px) {
 		.our-services {
-				min-height: 850px;
+				min-height: 200px;
 		}
 }
 

@@ -50,40 +50,9 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 		<style>
-			@media only screen and (max-width: 768px) {
-
-/* Target all paragraphs within the container class */
-.container p {
-  text-align:justify;
-  
-  word-spacing: -0.5px; /* Adjust value as needed */
-}
-
-/* Target specific headings within the container class */
-.container h1,
-.container h2,
-.container h3,
-.container h4,
-.container h5,
-.container h6 {
-  text-align: center;
-}
-
-/* You can target other elements like product descriptions here */
-.container .col-md-6 p {
-  text-align: center;
-}
-
-.custom-footer-column-logo {
-    display: flex; /* Enable flexbox for the column */
-    justify-content: center; /* Center content horizontally */
-    align-items: center !important; /* Center content vertically */
-  }
-}
-
+			
 .page-header {
-            
-			background-image: url('img/HomePageImages/HeaderImage1.png');
+            background-image: url('img/Header Images/PetroChemicalsDarkHeader.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -95,6 +64,23 @@
             /* text-align: center; */
         }		
 
+.row py-3 mt-2 :hover {
+	            color:black;
+    
+}
+/* ul.text-color-light li:hover {
+			color: black; 
+		}
+
+		
+		ul.text-color-light li:hover strong {
+			color: black; 
+		}
+
+		
+		ul.text-color-light li {
+			transition: color 0.3s ease-in-out;
+		} */
 		@media only screen and (max-width: 768px) {
 
 
@@ -112,13 +98,155 @@
 .container h5,
 .container h6 {
   text-align: center !important;
-}}
+}
+
+.custom-footer-column-logo {
+    display: flex; /* Enable flexbox for the column */
+    justify-content: center; /* Center content horizontally */
+    align-items: center !important; /* Center content vertically */
+  }
+}
+
+/* Add this CSS to your stylesheet */
+
+/* Define the glow effect */
+.glow-on-hover:hover {
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Optional: You can define a class for smooth transition effect */
+li {
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.p-3:hover {
+    background-color: #0C72B8;
+
+}
+/* Change text color inside .p-3 on hover */
+.p-3:hover p {
+    color: white !important;
+}
 
 
+
+
+.animated-text{
+ 
+ background: linear-gradient(90deg, #FBA834, #0C72B8 ,#50C4ED,#FBA834);
+ background-size: 200% 200%;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+ 0% {
+   background-position: 0% 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+   background-position: 0% 50%;
+ }
+}
+
+/* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f3f3;
+            margin: 0;
+        } */
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+			margin: 4px;
+			margin-bottom: 30px;
+			
+        }
+		.container1 p{
+			color:white;
+		}
+        .flip-card {
+            background-color: transparent;
+            width: 18.5%;
+            perspective: 300px;
+			
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+        }
+        .flip-card-front {
+            background-color: #bbb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+		@media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .flip-card {
+                width: 84%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .flip-card-front, .flip-card-back {
+                font-size: large;
+                padding: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .flip-card {
+                width: 80%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .flip-card-front, .flip-card-back {
+                font-size: medium;
+                padding: 5px;
+            }
+        }
 		</style>
-
+		
 	</head>
 
+	
 	<body>
 		<div class="body">
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
@@ -130,31 +258,7 @@
 									<div class="header-row">
 										<nav class="header-nav-top w-100">
 											<ul class="nav nav-pills justify-content-between w-100 h-100">
-												<!-- <li class="nav-item py-2 d-inline-flex">
-													<span class="header-top-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase">
-														<span>
-															<img width="15" height="18" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
-														</span>
-														<a class="text-color-secondary text-color-hover-primary text-decoration-none" href="tel:123-456-7890">(800) 123-4567</a>
-													</span>
-													<span class="header-top-email px-0 font-weight-normal align-items-center d-none d-xl-flex">
-														<span>
-															<img width="25" height="18" src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
-														</span>
-														<a class="text-color-secondary text-color-hover-primary text-decoration-none" href="mailto:business@portotheme.com">business@portotheme.com</a>
-													</span>
-													<span class="header-top-opening-hours px-0 font-weight-normal align-items-center text-color-secondary d-none d-xl-flex">
-														<span>
-															<img width="19" height="18" src="img/demos/business-consulting-2/icons/calendar.svg" alt="Calendar">
-														</span>
-														Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED
-													</span>
-												</li> -->
-												<!-- <li class="nav-item nav-item-header-top-socials d-none d-md-flex justify-content-between h-100">
-													<span class="header-top-button-make-as-appoitment d-inline-flex align-items-center justify-content-center h-100 p-0 align-top">
-														<a href="demo-business-consulting-2-contact-us.html" class="btn-primary d-flex align-items-center justify-content-center h-100 w-100 text-color-light font-weight-semibold text-decoration-none text-uppercase custom-button-header-top">free initial consultation</a>
-													</span>
-												</li> -->
+												
 											</ul>
 										</nav>
 									</div>
@@ -189,16 +293,8 @@
 															About Us
 														</a>
 													</li>
-													<!-- <li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-services.html">
-															Services
-														</a>
-													</li> -->
-													<!-- <li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-cases.html">
-															Cases
-														</a>
-													</li> -->
+													
+													
 													<li class="dropdown-secondary">
 														<a class="nav-link" href="demo-business-consulting-2-team.html">
 															Products
@@ -209,13 +305,9 @@
 															Enquiry
 														</a>
 													</li>
-													<!-- <li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-blog.html">
-															Blog
-														</a>
-													</li> -->
+													
 													<li class="dropdown-secondary">
-														<a class="nav-link active" href="demo-business-consulting-2-contact-us.html">
+														<a class="nav-link" href="demo-business-consulting-2-contact-us.html">
 															Contact Us
 														</a>
 													</li>
@@ -254,136 +346,149 @@
 
 			<div role="main" class="main">
 
-				<section class="page-header page-header-modern custom-page-header bg-color-quaternary" style="background-color: #b6be83 !important;">
+				<section class="page-header page-header-modern custom-page-header bg-color-quaternary" >
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-								<h1 class="font-weight-bold text-9 text-color-secondary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;">Contact Us</h1>
+								<h1 class="font-weight-bold text-9 text-color-secondary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;">Petro Chemicals</h1>
 							</div>
 							<div class="col-md-4 order-1 order-md-2 align-self-center">
 								<ul class="breadcrumb d-block text-md-end appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
-									<li><a href="#" style="color:white">Home</a></li>
-									<li class="active" style="color:white">Contact Us</li>
+									<li><a href="#"style="color: white;">Home</a></li>
+									<li class="active"style="color: white;">About Us</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="custom-bg-color-lighter-grey">
-					<div class="cards custom-cards h-auto pt-5 pb-4 container appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
-						<div class="row bg-color-light cards-container d-flex justify-content-center justify-content-xl-between w-100 mb-5 mx-0 box-shadow-1 p-relative top-0">
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								<div class="card border-radius-0 border-0 shadow-none">
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Get In Touch</h4>
-
-										<strong class="d-block text-secondary text-4">Work Inquiries</strong>
-										<p class="d-block m-0">(800) 123-4567</p>
-
-										<strong class="d-block text-secondary text-4 pt-4">Careers & Press</strong>
-										<p class="d-block m-0">(800) 123-4568</p>
-
-										<strong class="d-block text-secondary text-4 pt-4">Assistance Hours:</strong>
-										<p class="d-block m-0">Mon - Sat 9:00am - 6:00pm</p>
-										<p class="d-block m-0">Sunday - CLOSED</p>
-									</div>
+				<section class="our-services d-flex p-relative z-index-1 bg-color-light lazyload" style="height: 200px;">
+					<!-- <div class="col-img-our-services p-absolute overflow-hidden w-50 h-100"></div> -->
+					<div class="container">
+						<div class="align-items-center">
+							<div class="content-wrapper d-flex align-items-start position-relative bg-color-light z-index-1 mt-3">
+								<div class="text-content">
+									<!-- <p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Our Goal</p> -->
+									<!-- <h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Revolutionizing Agriculture on a Global Scale!</h2> -->
+									<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+										Petro Chemical Derivatives
+									</h2>
+									<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										At SFGW, we trade a diverse array of petrochemicals, ranging from polymer derivatives to industrial-grade chemicals such as Sodium Laureth Sulfate (SLES). Our principal focus is towards providing:
+									</p>
 								</div>
 							</div>
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								<div class="card border-radius-0 border-0 shadow-none">
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Address and Mail</h4>
+						</div>
+						<div>
+							<h2 class="text-color-secondary font-weight-bold text-capitalize appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="margin-bottom: 10px;">
+								Our Diverse Petro Chemicals Product Portfolio
+							</h2>
+						</div>
+						<div class="image-content ml-auto" style="height: 500px; width: 500px;">
+							<img src="img/HomePageImages/HomePage2.png" alt="Petro Chemicals" class="img-fluid">
+						</div>
+					</div>
+				</section>
+				
 
-										<strong class="d-block text-secondary text-4">Address</strong>
-										<p class="d-block m-0">123 Street Name, City, England</p>
-
-										<strong class="d-block text-secondary text-4 pt-4">E-mail</strong>
-										<p class="d-block m-0">
-											<a class="text-default" href="mailto:business@portotheme.com">business@y.com</a>
-										</p>
-									</div>
-								</div>
+				<!-- <section class="our-services d-flex p-relative z-index-1 bg-color-light lazyload" style="height: 200px;" >
+					
+					<div class="container">
+						<div class=" align-items-center">
+							<div class="content-wrapper d-flex align-items-start position-relative bg-color-light z-index-1 mt-3">
+								<div class="text-content">
+							
+							
+								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+									Petro Chemical Derivatives
+								</h2>
+								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">At SFGW, we trade a diverse array of petrochemicals, ranging from polymer derivatives to industrial-grade chemicals such as Sodium Laureth Sulfate (SLES). Our principal focus is towards providing:</p>
+								
 							</div>
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								<div class="card border-radius-0 border-0 shadow-none">
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1 border-end-0">
-										<h4 class="card-title mb-4 font-weight-semibold text-color-primary">Social Media</h4>
-										<ul class="social-icons custom-social-icons p-0 pt-3 m-0">
-											<li class="m-0 d-block pb-2 social-icons-instagram">
-												<a class="custom-bg-color-light-grey" href="http://www.instagram.com/" target="_blank" title="Instagram">
-													<i class="fab fa-instagram text-4 font-weight-semibold text-color-secondary"></i>
-												</a>
-											</li>
-											<li class="m-0 d-block pb-2 social-icons-twitter">
-												<a class="custom-bg-color-light-grey" href="http://www.twitter.com/" target="_blank" title="Twitter">
-													<i class="fab fa-twitter text-4 font-weight-semibold text-color-secondary"></i>
-												</a>
-											</li>
-											<li class="m-0 d-block pb-2 social-icons-facebook">
-												<a class="custom-bg-color-light-grey" href="http://www.facebook.com/" target="_blank" title="Facebook">
-													<i class="fab fa-facebook-f text-4 font-weight-semibold text-color-secondary"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
+						
+								  
+							</div>	
+						</div>
+						<div>
+							<h2 class="text-color-secondary font-weight-bold text-capitalize appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+								Our Diverse Petro Chemicals Product Portfolio
+							</h2>
+							</div>
+						<div class="image-content ml-auto" style="height: 600px;width: 600px;">
+							<img src="img\HomePageImages\HomePage2.png" alt="Petro Chemicals" class="img-fluid">
+						</div>
+						
+					</div>
+					
+				</section> -->
+
+				<div class="container1" style="padding: 6;margin: top 15px;">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/newimagesforagro/High Density Polyethylene.jpg');color: white;font-size: x-large;font-weight: bold;">
+								High-Density Polyethylene</br>(HDPE)
+							</div>
+							<div class="flip-card-back">
+								<p>Applications for making Shampoo Bottles, Pipe Systems, and Milk Jugs. Our supplier network comprises of reliable suppliers from Saudi Arabia, China, India and Vietnam. Some of the reputed brands we work with are Marlex, Tasnee and Billion.</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/newimagesforagro/Low Density Polyethylene.jpg');color: white;font-size: x-large;font-weight: bold;">
+								Low-Density Polyethylene (LDPE)
+							</div>
+							<div class="flip-card-back">
+								<p>We offer LDPE injection for caps production, squeeze bottle manufacturing, and tubing, as well as for other uses. The trustworthy brands we work with are ExxonMobil Chemical, LyondellBasell Industries, Sabic, Marlex and Tasnee.</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/newimagesforagro/Polypropylene.jpg');color: white;font-size: x-large;font-weight: bold;">
+								Polypropylene </br> (PP)
+							</div>
+							<div class="flip-card-back">
+								<p>We trade a diverse range of Polypropylene (PP) for several uses such as pellets, jars, bottles, cups and Raffia for woven bags. The trusted brands we work with are Sabic, ExxonMobil, LyondellBasell, and BASF.</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front"style="background-image: url('img/newimagesforagro/Polyethylene Terephthalate.jpg');color: white;font-size: x-large;font-weight: bold;">
+								Polyethylene Terephthalate </br> (PET)
+							</div>
+							<div class="flip-card-back">
+								<p>We trade virgin and non-virgin Polyethylene Terephthalate (PET) resins, flakes, and chips. These are mainly used for producing water bottles, CSD bottles, and textiles. Our trusted brands include Wankai and BillionPET.</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/newimagesforagro/Sodium Laureth Sulfate.jpg');color: white;font-size: x-large;font-weight: bold;">
+								Sodium Laureth Sulfate </br> (SLES)
+							</div>
+							<div class="flip-card-back">
+								<p>We offer distinctive concentrations of Sodium Laureth Sulfate (SLES), chiefly 70%, used predominantly in cleaning and foaming applications such as detergents and soaps. Our trusted brands are Godrej and BASF, and our suppliers are from India and China. Our trusted partnerships with renowned brands ensure reliability and consistency in every product offering.</p>
+								
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="container py-5">
-					<div class="row">
-						<div class="col">
-							<p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Get in Touch</p>
-							<h2 class="text-color-secondary font-weight-bold text-capitalize mb-2 custom-letter-spacing-2 custom-text-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: #0C72B8 !important;">Send Us a Message</h2>
-							<p class="mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Have a question, feedback, or need assistance? Our team will get back to you promptly!</p>
-
-							<form class="contact-form custom-form-style-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" action="php/contact-form.php" method="POST">
-								<div class="contact-form-success alert alert-success d-none mt-4">
-									<strong>Success!</strong> Your message has been sent to us.
-								</div>
-
-								<div class="contact-form-error alert alert-danger d-none mt-4">
-									<strong>Error!</strong> There was an error sending your message.
-									<span class="mail-error-message text-1 d-block"></span>
-								</div>
-								<div class="row">
-									<div class="form-group col-lg-6">
-										<input type="text" placeholder="Your Name" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" required>
-									</div>
-									<div class="form-group col-lg-6">
-										<input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" required>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<input placeholder="Subject" type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" required>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<textarea placeholder="Your Message..." maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" required></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<input type="submit" value="Send Message" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold" data-loading-text="Loading...">
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-
+				
+<!-- checkerrr till here -->
 				<section class="are-you-looking-for bg-color-secondary">
 					<div class="container">
 						<div class="row justify-content-between">
 							<div class="col-xl-5">
-								<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>Elevate Your Food Trading Experience With</p>
-								<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;">Simpra Foods</br> Goods Wholesalers</h2>
-								<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today! </p>
+								<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"></span>Elevate Your Food Trading Experience With</p>
+								<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;">Simpra Foods </br>Goods Wholesalers</h2>
+								<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today!</p>
 							</div>
 							<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
 								<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
@@ -524,7 +629,6 @@
 
 		<!-- Theme Custom -->
 		<script src="js/custom.js"></script>
-		
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
