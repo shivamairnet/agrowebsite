@@ -448,6 +448,7 @@ html .svg-stroke-color-hover-light svg:hover polygon {
 html .bg-color-primary,
 html .bg-primary {
 	background-color: #50C4ED !important;
+	/* background-image: url('img/newimagesforagro/OurMission.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; */
 }
 
 html .bg-color-hover-primary:hover,
