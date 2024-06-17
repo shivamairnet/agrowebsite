@@ -113,13 +113,13 @@ html[dir="rtl"] .slider-container .line-pre-title {
 }
 
 .card-accordion-our-services-container .card-accordion-our-services {
-		border: 5px solid #50C4ED;
+		border: 5px solid #FBA834;
 		border-top: 0;
 		margin: -2px -1px 0 -1px;
 }
 .card-accordion-our-services-container .card-header {
-    background-color: #50C4ED !important;
-    border-color: #50C4ED;
+    background-color: #FBA834 !important;
+    border-color:#FBA834;
 }
 .custom-cards {
 		position: relative;
