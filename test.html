@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Cards</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f3f3;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 90%;
+            justify-content: center;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 100%;
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flip-card-front {
+            /* background-image: url('img/newimagesforagro/Grains Header Image.jpg'); */
+            color: white;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('img/newimagesforagro/High Density Polyethylene.jpg');">
+                    High-Density Polyethylene(HDPE)
+                </div>
+                <div class="flip-card-back">
+                    <p>Applications for making Shampoo Bottles, Pipe Systems, and Milk Jugs. Our supplier network comprises of reliable suppliers from Saudi Arabia, China, India and Vietnam. Some of the reputed brands we work with are Marlex, Tasnee and Billion.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('img/newimagesforagro/Low Density Polyethylene.jpg');">
+                    Low-Density Polyethylene (LDPE)
+                </div>
+                <div class="flip-card-back">
+                    <p>We offer LDPE injection for caps production, squeeze bottle manufacturing, and tubing, as well as for other uses. The trustworthy brands we work with are ExxonMobil Chemical, LyondellBasell Industries, Sabic, Marlex and Tasnee.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('img/newimagesforagro/Polypropylene.jpg');">
+                    Polypropylene (PP)
+                </div>
+                <div class="flip-card-back">
+                    <p>We trade a diverse range of Polypropylene (PP) for several uses such as pellets, jars, bottles, cups and Raffia for woven bags. The trusted brands we work with are Sabic, ExxonMobil, LyondellBasell, and BASF.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('img/newimagesforagro/Polyethylene Terephthalate.jpg');">
+                    Polyethylene Terephthalate (PET)
+                </div>
+                <div class="flip-card-back">
+                    <p>We trade virgin and non-virgin Polyethylene Terephthalate (PET) resins, flakes, and chips. These are mainly used for producing water bottles, CSD bottles, and textiles. Our trusted brands include Wankai and BillionPET.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('img/newimagesforagro/Sodium Laureth Sulfate.jpg');">
+                    Sodium Laureth Sulfate (SLES)
+                </div>
+                <div class="flip-card-back">
+                    <p>We offer distinctive concentrations of Sodium Laureth Sulfate (SLES), chiefly 70%, used predominantly in cleaning and foaming applications such as detergents and soaps. Our trusted brands are Godrej and BASF, and our suppliers are from India and China. Our trusted partnerships with renowned brands ensure reliability and consistency in every product offering.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
