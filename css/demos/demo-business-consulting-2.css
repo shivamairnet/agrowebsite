@@ -26,8 +26,18 @@ body {
 * Custom Button
 */
 .custom-btn {
+<<<<<<< HEAD
 		height: 65px;
 		line-height: 30px;
+=======
+<<<<<<< HEAD
+		height: 65px;
+		line-height: 30px;
+=======
+		height: 60px;
+		line-height: 60px;
+>>>>>>> b941e811ae50a08de2da18279f617e30639e0e75
+>>>>>>> ef35591a251d3fcf3eaf31b02f0f747f2a4d3f77
 		text-align: center;
 }
 
@@ -880,7 +890,15 @@ html[dir="rtl"] .slider-container .line-pre-title {
 }
 
 #footer .custom-row-footer {
+<<<<<<< HEAD
 		padding-top: 100px !important;
+=======
+<<<<<<< HEAD
+		padding-top: 100px !important;
+=======
+		padding-top: 150px !important;
+>>>>>>> b941e811ae50a08de2da18279f617e30639e0e75
+>>>>>>> ef35591a251d3fcf3eaf31b02f0f747f2a4d3f77
 }
 
 @media (max-width: 1199px) {
