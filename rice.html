@@ -122,6 +122,89 @@ li {
 }
 
 
+.container1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+			margin: 4px;
+			margin-bottom: 30px;
+			
+        }
+		.container1 p{
+			color:white;
+		}
+        .flip-card {
+            background-color: transparent;
+            width: 30%;
+            perspective: 300px;
+			
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+        }
+        .flip-card-front {
+            background-color: #bbb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+		@media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .flip-card {
+                width: 84%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .flip-card-front, .flip-card-back {
+                font-size: large;
+                padding: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .flip-card {
+                width: 80%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .flip-card-front, .flip-card-back {
+                font-size: medium;
+                padding: 5px;
+            }
+        }
+
+
+
 		</style>
 		
 	</head>
@@ -209,6 +292,11 @@ li {
 														</a>
 													</li>
 													<li class="dropdown-secondary">
+														<a class="nav-link" href="others.html">
+															Others
+														</a>
+													</li>
+													<li class="dropdown-secondary">
 														<a class="nav-link" href="demo-business-consulting-2-services.html">
 															Enquiry
 														</a>
@@ -276,35 +364,84 @@ li {
 					</div>
 				</section>
 
+				<section class="our-services d-flex p-relative z-index-1 bg-color-light lazyload" style="height: 200px;">
+					<!-- <div class="col-img-our-services p-absolute overflow-hidden w-50 h-100"></div> -->
+					<div class="container" style="margin-bottom: 15px;">
+						<div class="align-items-center">
+							<div class="content-wrapper d-flex align-items-start position-relative bg-color-light z-index-1 mt-3">
+								<div class="text-content">
+									<!-- <p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Our Goal</p> -->
+									<!-- <h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Revolutionizing Agriculture on a Global Scale!</h2> -->
+									
+									<p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										Our rice portfolio comprises of several diverse grains, originating from India, Pakistan, Burma, Vietnam and Thailand.
 
-				<div class="container py-5 mb-3">
-					<div class="row align-items-center">
-						<div class="col-lg-5 pt-3 pt-lg-0 pb-4 pb-lg-0">
-							<div class="card border-radius-0 box-shadow-1 border-0 me-lg-3 p-3 mb-3 mb-lg-0">
-								<img src="img/newimagesforagro/Rice.jpg" class="img-fluid border-radius-0" alt="">
+									</p>
+
+									<p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										Minimum Order Quantity (MOQ): 5FCL 
+									</p>
+									<p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										Our Rice Portfolio
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-7">
-							<p class="text-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">Embracing a 'Loyalty for Reliability' approach, we source high-quality rice from reliable suppliers across Asia, Europe, the Middle East, Africa, and the Americas.</br></br>
-Asia – Including Cambodia, India, Myanmar, Pakistan, Thailand, and Vietnam, showcasing the finest Basmati and Non-Basmati varieties synonymous with authentic flavour and texture.</br></br>
-Europe, Middle East, and Africa – Our selection encompasses the richness of rice traditions, offering an exquisite array of choices to suit every palate.</br></br>
-Americas – From the fertile fields of Argentina, Brazil, Paraguay, and the United States, to Uruguay, we bring forth a bounty of premium rice options, ensuring exceptional quality and freshness with every grain.
+						<!-- <div>
+							<h2 class="mb-4 text-color-secondary font-weight-bold text-capitalize appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="margin-bottom: 20px; text-align: left;">
+								Our Diverse Petro Chemicals Product Portfolio
+							</h2>
+						</div> -->
+						<!-- <div class="image-content ml-auto" style="height: 500px; width: 500px;">
+							<img src="img/HomePageImages/HomePage2.png" alt="Petro Chemicals" class="img-fluid">
+						</div> -->
+					</div>
+				</section>
+				
+				<div class="container1" style="padding: 6;margin-top: 40px;margin-left: 5px;margin-right: 5px;">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/Rice Images (1)/Rice Images/Basmati Rice Image.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Basmati Rice & Its Varieties </br>
+							</div>
+							<div class="flip-card-back">
+								<p>Basmati Rice 1121/1509/1401/Pusa/Sugandha/Sharbati/Brown in (Steam/Sella/Golden Sella), Pakistan Super Kernel, 1121, 1509, Raw steam and Sella.
 
-								</p>
-							<!-- <p class="m-0 p-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">We use innovative logistics and supply chain management to streamline operations, lowering costs and improving delivery times. Our devoted team collaborates closely with suppliers and customers to understand their requirements and create unique solutions, resulting in solid, long-term relationships.</p> -->
-							<!-- <div class="counters custom-counters mt-5 d-flex">
-								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-									<strong data-to="240" data-append="+">0</strong>
-									<label class="text-color-primary font-weight-bold">Satisfied Clients</label>
-								</div>
-								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-									<strong data-to="2000" data-append="+">0</strong>
-									<label class="text-color-primary font-weight-bold">Successfull Cases</label>
-								</div>
-							</div> -->
+									</p>
+								
+							</div>
 						</div>
 					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/Rice Images (1)/Rice Images/Non Basmati Rice Image.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Non-Basmati Rice & Its Varieties
+							</div>
+							<div class="flip-card-back">
+								<p>PR11/14 (Steam/Sella/Golden Sella), IR 64 White Raw & Parboiled (Broken percentage available), Sona Masoori (Raw & Steam), Parmal Sella Rice, Swarna White rice & Parboiled (Broken Percentage available), IRRI 6, PK386.
+
+									</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/Rice Images (1)/Rice Images/Rice Image.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Other Rice Varieties
+							</div>
+							<div class="flip-card-back">
+								<p>Hom Mali Rice, Jasmine Rice, Parboiled Rice, White Rice.
+									</p>
+								
+							</div>
+						</div>
+					</div>
+					
+					
 				</div>
+
+
 
 				<section class="are-you-looking-for bg-color-secondary" style="margin-top: 50px !important;">
 					<div class="container">
@@ -432,6 +569,11 @@ Americas – From the fertile fields of Argentina, Brazil, Paraguay, and the Uni
 										<li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-team.html">
 												Products
+											</a>
+										</li>
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="others.html">
+												Others
 											</a>
 										</li>
 										<li class="dropdown-secondary">

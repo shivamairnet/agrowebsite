@@ -122,6 +122,87 @@ li {
 }
 
 
+.container1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+			margin: 4px;
+			margin-bottom: 30px;
+			
+        }
+		.container1 p{
+			color:white;
+		}
+        .flip-card {
+            background-color: transparent;
+            width: 18%;
+            perspective: 300px;
+			
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+        }
+        .flip-card-front {
+            background-color: #bbb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+		@media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .flip-card {
+                width: 84%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .flip-card-front, .flip-card-back {
+                font-size: large;
+                padding: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .flip-card {
+                width: 80%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .flip-card-front, .flip-card-back {
+                font-size: medium;
+                padding: 5px;
+            }
+        }
+
 		</style>
 		
 	</head>
@@ -209,6 +290,11 @@ li {
 														</a>
 													</li>
 													<li class="dropdown-secondary">
+														<a class="nav-link" href="others.html">
+															Others
+														</a>
+													</li>
+													<li class="dropdown-secondary">
 														<a class="nav-link" href="demo-business-consulting-2-services.html">
 															Enquiry
 														</a>
@@ -277,27 +363,88 @@ li {
 				</section>
 
 
-				<div class="container py-5 mb-3">
-					<div class="row align-items-center">
-						<div class="col-lg-5 pt-3 pt-lg-0 pb-4 pb-lg-0">
-							<div class="card border-radius-0 box-shadow-1 border-0 me-lg-3 p-3 mb-3 mb-lg-0">
-								<img src="img\headerlanding\EdibleOils.jpg" class="img-fluid border-radius-0" alt="">
+				<section class="our-services d-flex p-relative z-index-1 bg-color-light lazyload" style="height: 200px;">
+					<!-- <div class="col-img-our-services p-absolute overflow-hidden w-50 h-100"></div> -->
+					<div class="container" style="margin-bottom: 15px;">
+						<div class="align-items-center">
+							<div class="content-wrapper d-flex align-items-start position-relative bg-color-light z-index-1 mt-3">
+								<div class="text-content">
+									<!-- <p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Our Goal</p> -->
+									<!-- <h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Revolutionizing Agriculture on a Global Scale!</h2> -->
+									
+									<p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										SFGW has forged partnerships with our reliable suppliers in procuring the highest quality of Edible Oils from India and the UAE. 
+									</p>
+
+									<p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										Minimum Order Quantity (MOQ): 2FCL
+									</p>
+									
+									<p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										Our product portfolio consists of:
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-7">
-							<p class="text-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">Our selection includes high-quality olive oil, renowned for its rich flavor and health benefits; versatile and light canola oil, perfect for cooking and baking; and pure coconut oil, celebrated for its unique taste and nutritional value. We also provide soybean oil, known for its high smoke point and suitability for frying, as well as sunflower oil, favored for its mild flavor and heart-healthy properties.</br> </br>Additionally, we offer gourmet options such as avocado oil, prized for its high nutrient content and excellent for dressings and sautés, and sesame oil, which adds a distinctive flavor to Asian dishes. All our oils are sourced from trusted producers and undergo stringent quality checks to ensure they meet our high standards.</br></br> Whether you're a professional chef or a home cook, our extensive range of edible oils is designed to enhance your culinary creations and promote a healthy lifestyle. At Simpra Foods, we are committed to providing our customers with products that deliver exceptional taste, quality, and nutritional benefits.
-								</p>
-							<!-- <p class="m-0 p-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">We use innovative logistics and supply chain management to streamline operations, lowering costs and improving delivery times. Our devoted team collaborates closely with suppliers and customers to understand their requirements and create unique solutions, resulting in solid, long-term relationships.</p> -->
-							<!-- <div class="counters custom-counters mt-5 d-flex">
-								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-									<strong data-to="240" data-append="+">0</strong>
-									<label class="text-color-primary font-weight-bold">Satisfied Clients</label>
-								</div>
-								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-									<strong data-to="2000" data-append="+">0</strong>
-									<label class="text-color-primary font-weight-bold">Successfull Cases</label>
-								</div>
-							</div> -->
+						
+					</div>
+				</section>
+				
+				<div class="container1" style="padding: 6;margin-top: 20px;margin-left: 5px;margin-right: 5px;">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/Edible Oils (1)/Edible Oils/Vegetable Oil (2).jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Vegetable Oil</br>
+							</div>
+							<div class="flip-card-back">
+								<!-- <p>Applications for making Shampoo Bottles, Pipe Systems, and Milk Jugs. Our supplier network comprises of reliable suppliers from Saudi Arabia, China, India and Vietnam. Some of the reputed brands we work with are Marlex, Tasnee and Billion.</p> -->
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/Edible Oils (1)/Edible Oils/Sunflower Oil Image.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Sunflower Oil
+							</div>
+							<div class="flip-card-back">
+								
+								<!-- <p>We offer LDPE injection for caps production, squeeze bottle manufacturing, and tubing, as well as for other uses. The trustworthy brands we work with are ExxonMobil Chemical, LyondellBasell Industries, Sabic, Marlex and Tasnee.</p> -->
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/Edible Oils (1)/Edible Oils/Oilve Oil IMage.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Olive Oil
+							</div>
+							<div class="flip-card-back">
+								<!-- <p>We trade a diverse range of Polypropylene (PP) for several uses such as pellets, jars, bottles, cups and Raffia for woven bags. The trusted brands we work with are Sabic, ExxonMobil, LyondellBasell, and BASF.</p> -->
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front"style="background-image: url('img/Imageslatestadded/Edible Oils (1)/Edible Oils/Avocado Oil Image.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Avocado Oil
+							</div>
+							<div class="flip-card-back">
+								<!-- <p>We trade virgin and non-virgin Polyethylene Terephthalate (PET) resins, flakes, and chips. These are mainly used for producing water bottles, CSD bottles, and textiles. Our trusted brands include Wankai and BillionPET.</p> -->
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/Edible Oils (1)/Edible Oils/Coconut Oil Image.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Coconut Oil
+							</div>
+							<div class="flip-card-back">
+								<!-- <p>We offer distinctive concentrations of Sodium Laureth Sulfate (SLES), chiefly 70%, used predominantly in cleaning and foaming applications such as detergents and soaps. Our trusted brands are Godrej and BASF, and our suppliers are from India and China. Our trusted partnerships with renowned brands ensure reliability and consistency in every product offering.</p> -->
+								
+							</div>
 						</div>
 					</div>
 				</div>
@@ -428,6 +575,11 @@ li {
 										<li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-team.html">
 												Products
+											</a>
+										</li>
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="others.html">
+												Others
 											</a>
 										</li>
 										<li class="dropdown-secondary">
