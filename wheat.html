@@ -121,6 +121,100 @@ li {
     transition: text-shadow 0.3s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    .span-text {
+        display: none;
+    }
+}
+
+.container1 {
+            display: flex;
+            justify-content: space-between;
+            width: 94%;
+			margin: 10px;
+			
+			margin-left: 40px !important;
+			margin-right: 5px !important;
+		
+			
+			margin-bottom: 30px;
+			
+        }
+		.container1 p{
+			color:white;
+		}
+        .flip-card {
+            background-color: transparent;
+            width: 18%;
+            perspective: 300px;
+			
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+        }
+        .flip-card-front {
+            background-color: #bbb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+		@media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .flip-card {
+                width: 84%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .flip-card-front, .flip-card-back {
+                font-size: large;
+                padding: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .flip-card {
+                width: 80%;
+                height: auto;
+                margin: 10px 0;
+            }
+            .flip-card-front, .flip-card-back {
+                font-size: medium;
+                padding: 5px;
+            }
+        }
+
+
+
 
 		</style>
 		
@@ -183,7 +277,7 @@ li {
 										<a href="demo-business-consulting-2.html" style="display: block !important;">
 											<img alt="Porto" width="80" height="70" src="img\Imageslatestadded\Simpra International DMCC (1) - Copy (1).png" style="display: block !important;">
 										</a>
-										<span style="margin-left: 10px; font-size: 18px; font-weight: bold; color: #0C72B8; white-space: nowrap;">Simpra Foods Goods Wholesalers</span>
+										<span class="span-text" style="margin-left: 10px; font-size: 18px; font-weight: bold; color: #0C72B8; white-space: nowrap;">Simpra Foods Goods Wholesalers</span>
 									</div>
 								</div>
 							</div>
@@ -288,38 +382,100 @@ li {
 				</section>
 
 
-				<div class="container py-5 mb-3">
-					<div class="row align-items-center">
-						<div class="col-lg-5 pt-3 pt-lg-0 pb-4 pb-lg-0">
-							<div class="card border-radius-0 box-shadow-1 border-0 me-lg-3 p-3 mb-3 mb-lg-0">
-								<img src="img\HomePageImages\Wheat Product Page Image (1).jpg" class="img-fluid border-radius-0" alt="">
+			
+				<section class="our-services d-flex p-relative z-index-1 bg-color-light lazyload" style="height: 200px;">
+					<!-- <div class="col-img-our-services p-absolute overflow-hidden w-50 h-100"></div> -->
+					<div class="container" style="margin-bottom: 35px;">
+						<div class="align-items-center">
+							<div class="content-wrapper d-flex align-items-start position-relative bg-color-light z-index-1 mt-3">
+								<div class="text-content">
+									<!-- <p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Our Goal</p> -->
+									<!-- <h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Revolutionizing Agriculture on a Global Scale!</h2> -->
+									
+									<p class="text-4 mb-4 appear-animation mt-4" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										With an extensive range of wheat varieties catering to diverse culinary applications, we ensure excellence in every grain sourced.
+ 
+									</p>
+
+									<p class="text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										Minimum Order Quantity (MOQ): 5FCL,Sourced from India & UAE.
+									</p>
+									<p class="text-4 mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+										We offer an extensive range of wheat varieties which includes:
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-7">
-							<p class="text-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-								With an extensive range of wheat varieties catering to diverse culinary applications, we ensure excellence in every grain sourced from the US, India, the European Union, Argentina, Australia and beyond.
-								Some varieties of Wheat supplied by SFGW:  
-								Medium hard bread wheat: This type of wheat is good for making flatbreads like chapati, naan, and tandoori. It has a medium grain size and appearance and is just the right hardness for milling into flour.</br></br>
-								Hard bread wheat: Bold and lustrous grain. It is suitable for a variety of fermented and non-fermented breads. The bread quality is high. Wheat flour is used in baking bread, burgers, etc.
-								Soft bread wheat: Yellowish/white grain, it is suitable for biscuit making, doughnuts, cakes, cookies, pastries, etc.
-								Durum wheat: Large and hard kernel, vitreous grain. It contains semolina, which when mixed with water, forms a dough. This dough is used in making pasta, noodles, spaghetti, etc.
-							<!-- </br></br>Embracing a 'Loyalty for Reliability' approach, we source high-quality rice from reliable suppliers across Asia, Europe, the Middle East, Africa, and the Americas.</br></br>
-Asia – Including Cambodia, India, Myanmar, Pakistan, Thailand, and Vietnam, showcasing the finest Basmati and Non-Basmati varieties synonymous with authentic flavour and texture.</br></br>
-Europe, Middle East, and Africa – Our selection encompasses the richness of rice traditions, offering an exquisite array of choices to suit every palate.</br></br>
-Americas – From the fertile fields of Argentina, Brazil, Paraguay, and the United States, to Uruguay, we bring forth a bounty of premium rice options, ensuring exceptional quality and freshness with every grain. -->
-
+						<!-- <div>
+							<h2 class="mb-4 text-color-secondary font-weight-bold text-capitalize appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="margin-bottom: 20px; text-align: left;">
+								Our Diverse Petro Chemicals Product Portfolio
+							</h2>
+						</div> -->
+						<!-- <div class="image-content ml-auto" style="height: 500px; width: 500px;">
+							<img src="img/HomePageImages/HomePage2.png" alt="Petro Chemicals" class="img-fluid">
+						</div> -->
+					</div>
+				</section>
+				
+				<div class="container1" style="padding: 6;margin-top: 30px;margin-left: 5px;margin-right: 5px;">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/wheat/Sharabati Wheat(1).jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Sharabati</br>
+							</div>
+							<div class="flip-card-back">
+								<p>This variety is characterized by its long, slender grains and high protein content. It is commonly used in bread making.
 								</p>
-							<!-- <p class="m-0 p-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">We use innovative logistics and supply chain management to streamline operations, lowering costs and improving delivery times. Our devoted team collaborates closely with suppliers and customers to understand their requirements and create unique solutions, resulting in solid, long-term relationships.</p> -->
-							<!-- <div class="counters custom-counters mt-5 d-flex">
-								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-									<strong data-to="240" data-append="+">0</strong>
-									<label class="text-color-primary font-weight-bold">Satisfied Clients</label>
-								</div>
-								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-									<strong data-to="2000" data-append="+">0</strong>
-									<label class="text-color-primary font-weight-bold">Successfull Cases</label>
-								</div>
-							</div> -->
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/wheat/Desi Wheat.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Desi
+							</div>
+							<div class="flip-card-back">
+								<p>This variety is known for its reddish colour and strong flavour. It is commonly used in rotis (flatbread) and other traditional Indian dishes.
+								</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/wheat/Sonalika.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Sonalika
+							</div>
+							<div class="flip-card-back">
+								<p>This variety is characterized by its large grains and yellow colour. It is commonly used in noodles and pasta dishes.
+								</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front"style="background-image: url('img/Imageslatestadded/wheat/HD-2967 (2).jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								HD-2967
+							</div>
+							<div class="flip-card-back">
+								<p>This variety is characterized by its short grains and dark colour. It is commonly used in biscuits and crackers.
+								</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-image: url('img/Imageslatestadded/wheat/Durum Wheat.jpg');color: white;font-size: x-large;font-weight: bold;background-repeat: no-repeat; background-size: cover; background-position: center;">
+								Durum Wheat
+							</div>
+							<div class="flip-card-back">
+								<p>Large and hard kernel, vitreous</br> grain. It contains semolina, which</br> is when mixed with water, </br>forms a dough. This dough used in making of pasta, noodles, spaghetti, etc.
+								</p>
+								
+							</div>
 						</div>
 					</div>
 				</div>
