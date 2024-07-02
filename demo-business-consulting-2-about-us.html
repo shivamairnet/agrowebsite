@@ -13,8 +13,8 @@
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="img\HomePageImages\logonew4.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img\HomePageImages\logonew4.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -148,6 +148,43 @@ li {
 @media (max-width: 768px) {
     .span-text {
         display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-xl-6.d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .col-xl-6 .d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .col-xl-6 .d-flex a {
+        margin: 10px 0 !important; /* Adds space between the buttons */
+    }
+
+	.are-you-looking-for-phone {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    /* .are-you-looking-for-phone img {
+        margin-right: 2px; 
+    } */
+
+	
+
+    .are-you-looking-for-phone a {
+        color: white !important;
+        width: 165px !important;
+        display: inline-block !important;
+        text-decoration: none !important;
+        text-align: center !important;
     }
 }
 
@@ -422,17 +459,22 @@ li {
 								<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 60px 80px; font-size: 16px;height: 85px;width: 70px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Contact On Whatsapp!</a>
 								<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 60px 80px; font-size: 16px;height: 65px;width: 150px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Get In Touch!</a>
 							</div> -->
-							<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row flex-md-column">
+							<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
 								<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
 									<span>
 										<img width="16" height="25" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
 									</span>
 									<a class="text-color-light text-decoration-none" href="tel:123-456-7890" style="color: white !important;width:165px !important;">+971 4 394 8736</a>
 								</span>
-								<div class="d-flex flex-column align-items-center w-100">
-									<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 10px 10px; font-size: 20px; margin-bottom: 10px;width: 220px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"><strong>Whatsapp!</strong></a>
-									<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 10px 10px; font-size: 20px;width:260px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"><strong>Get In Touch!</strong></a>
+								<!-- <div class="d-flex">
+									<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 10px 10px; font-size: 14px; margin-right: 30px;width: 140px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Whatsapp!</a>
+									<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 10px 10px; font-size: 14px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Get In Touch!</a>
+								</div> -->
+								<div class="d-flex">
+									<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation text-center" style="padding: 10px 10px; font-size: 20px; margin-right: 30px;width: 220px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"><strong>Whatsapp!</strong></a>
+									<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation text-center" style="padding: 10px 10px; font-size: 20px;width:260px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"><strong>Get In Touch!</strong></a>
 								</div>
+								
 							</div>
 							
 						</div>
@@ -446,7 +488,7 @@ li {
 					<div class="row py-5 custom-row-footer">
 						<div class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
 							<img width="130" height="110" src="img\HomePageImages\SimpraLogoUpdated(1).png" alt="Logo Footer" style="margin-bottom: 10px;">
-							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods Wholesalers Co.llc
+							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods Wholesalers,</br>
 								Office 3007 & 3008, Mazaya Business Ave., AA1 Tower, JLT, PO Box 391935, Dubai-UAE
 							
 								</p>
