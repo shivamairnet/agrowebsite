@@ -9062,6 +9062,7 @@ a.text-light:focus, a.text-light:hover {
 }
 
 @media (min-width: 768px) {
+
 	.col-md-pull-12 {
 		margin-left: -100%;
 	}

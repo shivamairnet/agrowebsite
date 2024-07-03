@@ -227,8 +227,17 @@ li {
 
 		@media (max-width: 768px) {
     .span-text {
-        display: none;
+        font-size:small !important;
     }
+
+	.img-header{
+		height: 35px;
+		width: 35px;
+	}
+
+	.header-nav-features-toggle .fas.fa-search {
+		display:none;
+	}
 }
 
 @media (max-width: 576px) {
@@ -274,6 +283,92 @@ li {
 			font-size: 1.0em !important;  /* Adjust font size for mobile screens */
         }
     }
+
+
+	@media (max-width: 767px) {
+    #footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .custom-row-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-footer-column-logo {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-column img {
+        margin-bottom: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .custom-container-info-socials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav-phone,
+    .footer-nav-email {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-nav-phone img,
+    .footer-nav-email img {
+        margin-right: 5px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-footer {
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 20px !important;
+        width: 100% !important;
+    }
+
+    .nav-footer ul.nav-pills {
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 10px !important;
+    }
+
+    .nav-footer .nav-link {
+        margin-bottom: 10px !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    
+    .footer-copyright {
+        text-align: center !important ;
+        margin-top: 20px !important;
+        width: 100% !important;
+    }
+
+    .footer-copyright img {
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+	 /* Debug borders to check if elements are being targeted */
+	 .nav-footer, .nav-footer ul.nav-pills, .nav-footer .nav-link, .footer-copyright {
+        border: 1px solid red; /* Remove this line after verifying */
+    }
+}
+
 
 		</style>
 		
@@ -329,7 +424,7 @@ li {
 								<div class="header-row">
 									<div class="header-logo" style="display: flex; align-items: flex-center; padding-left: 0 !important; margin-left: 0 !important;">
 										<a href="demo-business-consulting-2.html" style="display: block !important;">
-											<img alt="Porto" width="80" height="70" src="img\Imageslatestadded\Simpra International DMCC (1) - Copy (1).png" style="display: block !important;">
+											<img class="img-header" alt="Porto" width="80" height="70" src="img\Imageslatestadded\Simpra International DMCC (1) - Copy (1).png" style="display: block !important;">
 										</a>
 										<span class="span-text" style="margin-left: 10px; font-size: 16px; font-weight: bold; color: #0C72B8; white-space: nowrap;">Simpra Foods Goods Wholesalers</span>
 									</div>
@@ -362,11 +457,11 @@ li {
 															Products
 														</a>
 													</li>
-													<li class="dropdown-secondary">
+													<!-- <li class="dropdown-secondary">
 														<a class="nav-link" href="others.html">
 															Others
 														</a>
-													</li>
+													</li> -->
 													<li class="dropdown-secondary">
 														<a class="nav-link" href="demo-business-consulting-2-services.html">
 															Enquiry
@@ -645,11 +740,11 @@ li {
 												Products
 											</a>
 										</li>
-										<li class="dropdown-secondary">
+										<!-- <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="others.html">
 												Others
 											</a>
-										</li>
+										</li> -->
 										<li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-services.html">
 												Enquiry

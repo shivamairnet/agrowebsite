@@ -123,11 +123,7 @@ li {
     transition: text-shadow 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    .span-text {
-        display: none;
-    }
-}
+
 
 @media (max-width: 576px) {
     .col-xl-6.d-flex {
@@ -164,6 +160,22 @@ li {
         text-decoration: none !important;
         text-align: center !important;
     }
+}
+
+@media (max-width: 768px) {
+    
+	.span-text{
+		font-size: small !important;
+	}
+
+	.img-header{
+		height: 35px;
+		width: 35px;
+	}
+
+	.header-nav-features-toggle .fas.fa-search {
+		display:none;
+	}
 }
 
 		</style>
@@ -225,7 +237,7 @@ li {
 									</div> -->
 									<div class="header-logo" style="display: flex; align-items: flex-center; padding-left: 0 !important; margin-left: 0 !important;">
 										<a href="demo-business-consulting-2.html" style="display: block !important;">
-											<img alt="Porto" width="80" height="70" src="img\Imageslatestadded\Simpra International DMCC (1) - Copy (1).png" style="display: block !important;">
+											<img class="img-header" alt="Porto" width="80" height="70" src="img\Imageslatestadded\Simpra International DMCC (1) - Copy (1).png" style="display: block !important;">
 										</a>
 										<span class="span-text" style="margin-left: 10px; font-size: 16px; font-weight: bold; color: #0C72B8; white-space: nowrap;">Simpra Foods Goods Wholesalers</span>
 									</div>
@@ -258,11 +270,11 @@ li {
 															Products
 														</a>
 													</li>
-													<li class="dropdown-secondary">
+													<!-- <li class="dropdown-secondary">
 														<a class="nav-link" href="others.html">
 															Others
 														</a>
-													</li>
+													</li> -->
 													<li class="dropdown-secondary">
 														<a class="nav-link" href="demo-business-consulting-2-services.html">
 															Enquiry
@@ -483,11 +495,11 @@ li {
 												Products
 											</a>
 										</li>
-										<li class="dropdown-secondary">
+										<!-- <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="others.html">
 												Others
 											</a>
-										</li>
+										</li> -->
 										<li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-services.html">
 												Enquiry
