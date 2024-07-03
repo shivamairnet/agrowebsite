@@ -52,134 +52,41 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 		<style>
-			@media only screen and (max-width: 768px) {
+			
+.page-header {
+            /* background-image: url('img/HomePageImages/HeaderImage1.png'); */
+			/* background-color: #0C72B8; */
+            /* background-size: cover; */
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            height: 200px; 
+			/* Example height, adjust as needed */
+            color: white; 
+			/* Text color for better readability */
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            /* text-align: center; */
+        }		
 
-/* Target all paragraphs within the container class */
-.container p {
-  text-align:justify !important;
-  
-  word-spacing: -0.5px; /* Adjust value as needed */
+.row py-3 mt-2 :hover {
+	            color:black;
+    
 }
-
-/* Target specific headings within the container class */
-.container h1,
-.container h2,
-.container h3,
-.container h4,
-.container h5,
-.container h6 {
-  text-align: center !important;
-}
-
-/* You can target other elements like product descriptions here */
-.container .col-md-6 p {
-  text-align: center !important;
-}
-
-
-.custom-footer-column-logo {
-    display: flex; /* Enable flexbox for the column */
-    justify-content: center; /* Center content horizontally */
-    align-items: center !important; /* Center content vertically */
-  }
-
-  /* .custom-highlight-text-1 {
-    text-align: center !important;
-  } */
-}
-
-
-/* Animated text fill effect */
-.animated-text{
- 
-  background: linear-gradient(90deg, #FBA834, #0C72B8 ,#50C4ED,#FBA834);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient 5s infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.animated-text1{
- 
- background: linear-gradient(90deg, #FBA834 ,#50C4ED,#FBA834);
- background-size: 200% 200%;
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- animation: gradient 5s infinite;
-}
-
-@keyframes gradient {
- 0% {
-   background-position: 0% 50%;
- }
- 50% {
-   background-position: 100% 50%;
- }
- 100% {
-   background-position: 0% 50%;
- }
-}
-
-.animated-text2{
- 
- background: linear-gradient(90deg, #FBA834,white ,#FBA834);
- background-size: 200% 200%;
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- animation: gradient 5s infinite;
-}
-
-@keyframes gradient {
- 0% {
-   background-position: 0% 50%;
- }
- 50% {
-   background-position: 100% 50%;
- }
- 100% {
-   background-position: 0% 50%;
- }
-}
-
-.text-4:hover {
-			color: #FBA834 !important; /* Change to desired hover color */
+/* ul.text-color-light li:hover {
+			color: black; 
 		}
-
-		.text-3-5 {
-			transition: color 0.3s ease-in-out;
-		}
-.no-uppercase {
-            text-transform: none; /* Ensure text is displayed as typed */
-        }
-
-		@media (max-width: 768px) {
-    .span-text {
-        font-size: 15px !important;
-    }
-
-	.img-header{
-		height: 30px;
-		width: 30px;
-	}
-
-	.header-nav-features-toggle .fas.fa-search {
-		display:none;
-	}
-}
 
 		
-@media only screen and (max-width: 768px) {
+		ul.text-color-light li:hover strong {
+			color: black; 
+		}
+
+		
+		ul.text-color-light li {
+			transition: color 0.3s ease-in-out;
+		} */
+		@media only screen and (max-width: 768px) {
 
 
 .container p {
@@ -196,16 +103,66 @@
 .container h5,
 .container h6 {
   text-align: center !important;
-}}
+}
 
+.custom-footer-column-logo {
+    display: flex; /* Enable flexbox for the column */
+    justify-content: center; /* Center content horizontally */
+    align-items: center !important; /* Center content vertically */
+  }
+}
 
-.vertical-text span {
-        display: block;
-        transform: rotate(0);
-        line-height: 1.5; /* Adjust this value as needed */
+/* Add this CSS to your stylesheet */
+
+/* Define the glow effect */
+.glow-on-hover:hover {
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Optional: You can define a class for smooth transition effect */
+li {
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.animated-text1{
+ 
+ background: linear-gradient(90deg, #FBA834 ,white,#FBA834);
+ background-size: 200% 200%;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+ 0% {
+   background-position: 0% 50%;
+ }
+ 50% {
+   background-position: 100% 50%;
+ }
+ 100% {
+   background-position: 0% 50%;
+ }
+}
+
+@media (max-width: 768px) {
+    .span-text {
+        font: size 15px !important;
     }
 
-	@media (max-width: 576px) {
+	.img-header{
+		height: 35px;
+		width: 35px;
+	}
+
+	.header-nav-features-toggle .fas.fa-search {
+		display:none;
+	}
+}
+
+@media (max-width: 576px) {
     .col-xl-6.d-flex {
         flex-direction: column !important;
         align-items: center !important;
@@ -241,150 +198,20 @@
         text-align: center !important;
     }
 }
-
-/* @media (max-width: 768px) {
- 
-
-  .our-services {
-    background-image: url('img/HomePageImages/goal.jpg') !important;
-    background-size: cover !important;
-    background-position: center !important;
+@media (max-width: 768px) {
+  .col-lg-6 {
+    margin-bottom: 20px; /* Adjust the margin bottom as needed */
   }
-} */
+}
 
 
-
-	@media (max-width: 768px) {
-        .col-lg-6 {
-            width: 100%;
-            text-align: center;
-        }
-        .list {
-            padding-left: 0;
-            margin-left: 0;
-        }
-        .list li {
-            list-style: none;
-            text-align: left;
-            margin-bottom: 1rem; /* Adjust as needed */
-        }
-        .list li .text-4 {
-            margin-left: 0.7rem; /* Adjust as needed */
-        }
-    }
 		</style>
 		
 	</head>
 
+	
 	<body>
 		<div class="body">
-
-			<!-- <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
-				<div class="header-body border-top-0">
-
-					
-					<div class="header-top header-top-default header-top-borders border-bottom-0 bg-color-light">
-						<div class="container h-100">
-							<div class="header-row h-100">
-								
-								<div class="header-column justify-content-between">
-
-
-									
-									<div class="header-row">
-										<nav class="header-nav-top w-100">
-											<ul class="nav nav-pills justify-content-between w-100 h-100">
-												
-											</ul>
-										</nav>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="header-container container bg-color-light">
-						
-				
-							
-							<div class="header-column header-column-logo" style="padding-left: 0 !important; margin-left: 0 !important;">
-								<div class="header-row" style="padding-left: 0 !important; margin-left: 0 !important;">
-									<div class="header-logo" style="padding-left: 0 !important; margin-left: 0 !important;">
-										<a href="demo-business-consulting-2.html" style="display: block !important;">
-											<img alt="Porto" width="100" height="70" src="img/HomePageImages/SimpraLogoUpdated(1).png" style="display: block !important;">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="header-column header-column-nav-menu justify-content-end">
-								<div class="header-row">
-									<div class="header-nav header-nav-links order-2 order-lg-1">
-										<div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1">
-											<nav class="collapse">
-												<ul class="nav nav-pills" id="mainNav">
-													<li class="dropdown-secondary">
-														<a class="nav-link active" href="demo-business-consulting-2.html">
-															Home
-														</a>
-													</li>
-													<li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-about-us.html">
-															About Us
-														</a>
-													</li>
-													
-													<li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-team.html">
-															Products
-														</a>
-													</li>
-													<li class="dropdown-secondary">
-														<a class="nav-link" href="others.html">
-															Others
-														</a>
-													</li>
-													<li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-services.html">
-															Enquiry
-														</a>
-													</li>
-													
-													<li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-contact-us.html">
-															Contact Us
-														</a>
-													</li>
-												</ul>
-											</nav>
-										</div>
-										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-											<i class="fas fa-bars"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="header-column header-column-search justify-content-center align-items-end">
-								<div class="header-nav-features">
-									<div class="header-nav-feature header-nav-features-search d-inline-flex">
-										<a href="#" class="header-nav-features-toggle" data-focus="headerSearch">
-											<i class="fas fa-search header-nav-top-icon text-color-secondary text-3"></i>
-										</a>
-										<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed border-radius-0" id="headerTopSearchDropdown">
-											<form role="search" action="page-search-results.html" method="get">			
-												<div class="simple-search input-group">
-													<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
-													<button class="btn" type="submit" aria-label="Search">
-														<i class="fa fa-search header-nav-top-icon text-color-secondary"></i>
-													</button>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header> -->
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body border-top-0">
 					<div class="header-top header-top-default header-top-borders border-bottom-0 bg-color-light">
@@ -450,12 +277,12 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown-secondary">
-														<a class="nav-link active" href="demo-business-consulting-2.html">
+														<a class="nav-link" href="demo-business-consulting-2.html">
 															Home
 														</a>
 													</li>
 													<li class="dropdown-secondary">
-														<a class="nav-link" href="demo-business-consulting-2-about-us.html">
+														<a class="nav-link active" href="demo-business-consulting-2-about-us.html">
 															About Us
 														</a>
 													</li>
@@ -524,888 +351,152 @@
 			</header>
 
 			<div role="main" class="main">
-				<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover show-dots-xs show-dots-sm show-dots-md nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover bg-color-quaternary custom-slider-container mb-0" data-plugin-options="{'autoplay': true, 'autoplayTimeout': 7000}" data-dynamic-height="['991px','991px','991px','750px','750px']" style="height: 991px;">
-					<div class="owl-stage-outer">
-						<div class="owl-stage">
 
-							<!-- Carousel Slide 1 -->
-							<div class="owl-item position-relative overflow-hidden">
-								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/HomePageImages/image11.png); background-size: cover; background-position: center;"></div>
-								<div class="container position-relative z-index-3 pb-5 h-100">
-									<div class="row justify-content-center justify-content-lg-start align-items-center pb-5 h-100">
-										<div class="col-sm-9 col-lg-7 text-center text-lg-start pb-5 mb-5">
-											<h2 class="text-color-primary font-weight-bold text-uppercase text-4 line-height-3 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}"><span class="line-pre-title bg-color-primary d-none d-lg-inline-block"></span>Quality Products, Global Reach</h2>
-											<h1 class="font-weight-extra-bold text-10 line-height-2 pe-lg-5 me-lg-5 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" data-plugin-options="{'minWindowWidth': 0}" style="color:white">Empowering Growth for a Thriving Future</h1>
-											<!-- <p class="text-4 text-color-dark font-weight-light mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Professional helping you design success!</p> -->
-											<a href="demo-business-consulting-2-services.html" class="btn btn-primary btn-modern font-weight-bold text-2 btn-py-3 px-5 mt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250" data-plugin-options="{'minWindowWidth': 0}">GET STARTED</a>
-										</div>
-									</div>
-								</div>
+				<section class="page-header page-header-modern custom-page-header " style="background-color: #0C72B8;" >
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
+								<h1 class="font-weight-bold text-9 text-color-secondary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;">About Us</h1>
 							</div>
-
-							<!-- Carousel Slide 2 -->
-							<div class="owl-item position-relative overflow-hidden">
-								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToRight" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/HomePageImages/image10.jpg); background-size: cover; background-position: center;"></div>
-								<div class="container position-relative z-index-3 pb-5 h-100">
-									<div class="row align-items-center justify-content-center justify-content-lg-end pb-5 h-100">
-										<div class="col-sm-9 col-lg-7 text-center text-lg-start pb-5 mb-5">
-											<h2 class="text-color-primary font-weight-bold text-uppercase text-4 line-height-3 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}"><span class="line-pre-title bg-color-primary d-none d-lg-inline-block"></span>Sowing Seeds of Profitability</h2>
-											<h1 class="font-weight-extra-bold text-10 line-height-2 pe-lg-5 me-lg-5 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" data-plugin-options="{'minWindowWidth': 0}" style="color: white;">Your Trusted Partner in Commodities </h1>
-											<!-- <p class="text-4 text-color-dark font-weight-light mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Professional helping you design success!</p> -->
-											<a href="demo-business-consulting-2-services.html" class="btn btn-primary btn-modern font-weight-bold text-2 btn-py-3 px-5 mt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250" data-plugin-options="{'minWindowWidth': 0}">GET STARTED</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="owl-nav">
-						<button type="button" role="presentation" class="owl-prev" aria-label="Previous"></button>
-						<button type="button" role="presentation" class="owl-next" aria-label="Next"></button>
-					</div>
-				</div>
-
-				<section class="bg-color-light p-relative z-index-2">
-					
-					<div class="cards custom-cards custom-cards-slider h-auto pt-5 pb-4 container appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
-						
-						<div class="row bg-color-light cards-container d-flex justify-content-center justify-content-xl-between w-100 mb-5 mx-0 box-shadow-1 p-relative top-0">
-							<div>
-								<h3 class="text-center font-weight-semibold text-color-primary no-uppercase" style="margin-top: 20px;"><strong>Who We Are And What We Do</strong></h3>
-							</div>
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								<div class="card border-radius-0 border-0 shadow-none">
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<img src="img/HomePageImages/trade.png" alt="Strategic Planning" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
-										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="text-align: center;">Our Dedication</h4>
-										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" style="text-align: center;">At Simpra Foods Goods Wholesalers, our commitment goes beyond merely providing high-quality products; we ensure efficient logistics, reliable sourcing, and comprehensive support to meet the diverse needs of our international clientele.</p>
-										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">read more +</a> -->
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								
-								<div class="card border-radius-0 border-0 shadow-none">
-									
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1">
-										<!-- <h4 class="text-center font-weight-semibold text-color-primary" ><strong>Who We Are And</br> What We Do</strong></h4> -->
-										<img src="img\HomePageImages\product.png" alt="Financial Clean-Up" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
-										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Our Products</h4>
-										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">With a focus on reliability and efficiency, we offer a diverse range of products including <strong> Sugar, Rice,Pulses and Beans, Petrochemicals, Fertilizers, Spices, Edible oils, Wheat, Coffee & Tea, Confectionery, Animal Feeds, Dairy Products</strong> with many other products, catering to different businesses worldwide. 
-											</p>
-										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">read more +</a> -->
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-xl-4 bg-light p-0 shadow-none">
-								<div class="card border-radius-0 border-0 shadow-none">
-									<div class="card-body d-flex align-items-center justify-content-between flex-column z-index-1 border-end-0">
-										<img src="img\HomePageImages\quality-assurance.png" alt="Cash Flow Planning" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
-										<h4 class="card-title mb-1 font-weight-semibold text-color-secondary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Quality Assurance</h4>
-										<p class="card-text text-center pt-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100">At Simpra Foods Goods Wholesalers, we meticulously select and source our products from trusted suppliers, ensuring they meet the highest industry standards and our rigorous quality control processes include thorough inspections and testing at every stage of the product, from procurement to delivery.</p>
-										<!-- <a href="#" class="font-weight-bold text-uppercase text-decoration-none mt-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">read more +</a> -->
-									</div>
-								</div>
+							<div class="col-md-4 order-1 order-md-2 align-self-center">
+								<ul class="breadcrumb d-block text-md-end appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
+									<li><a href="#"style="color: white;">Home</a></li>
+									<li class="active"style="color: white;">About Us</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="our-services d-flex p-relative z-index-1 bg-color-light lazyload" data-bg-src="img/HomePageImages/goal.jpg">
-					<div class="col-img-our-services p-absolute overflow-hidden w-50 h-100"></div>
-					<div class="container">
-						<div class="row justify-content-end align-items-center h-100">
-							<div class="col-lg-5 position-relative bg-color-light z-index-1 col-our-services-text">
-								<p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>Our Goal</p>
-								<!-- <h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Revolutionizing Agriculture on a Global Scale!</h2> -->
-								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 appear-animation animated-text" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
-									Connecting Markets, Empowering Growth
-								  </h2>
-								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">At SFGW, our mission is to revolutionize global trade by offering seamless access to a wide range of essential commodities across various industries. We pride ourselves on cultivating strong partnerships with businesses worldwide, leveraging our extensive financial expertise and diverse network of suppliers and buyers. 
 
-									</br></br>Our commitment to sustainability underpins every facet of our operations, ensuring responsible practices that benefit both our partners and the environment. 
-									
-								</br></br>Join us at SFGW in transforming the international trade landscape, where reliability, innovation, and excellence converge to create lasting value.
-									
-									 									
-									</p>
-								<!-- <p class="mb-4 pb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet.</p> -->
-								<div class="accordion accordion-sm appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" id="accordionServices">
-									<div class="border-radius mb-1 border-0 card-accordion-our-services-container">
-										<div class="card-header py-2 bg-color-quaternary">
-											<h4 class="card-title m-0">
-												<a class="accordion-toggle text-color-tertiary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3One">
-													Sourcing Process
-												</a>
-											</h4>
-										</div>
-										<div id="collapse3One" class="collapse card-accordion-our-services show">
-											<div class="card-body">
-												<p class="mb-0">Our goal is to source products responsibly, emphasizing proper documentation and certifications to minimize negative environmental impacts and uphold social responsibility. This commitment includes supporting regenerative practices, participating in fair trade alliances, and promoting methods that ensure transparency and ethical standards throughout our sourcing process.
-													</p>
-												<!-- <a href="demo-business-consulting-2-services.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">read more +</a> -->
-											</div>
-										</div>
+				<!-- ourmission and our vision -->
+				<div class="container-fluid">
+					<div class="row py-3 mt-2" >
+
+						<div class="col-lg-6 p-0" >
+							<section class="section section-height-3 bg-color-primary-darken-1 h-100 m-0 border-0" style="background-image: url('img/newimagesforagro/OurMission.jpg');
+							background-size: cover;
+							background-position: center;
+							background-repeat: no-repeat;">
+
+								<div class="row justify-content-end m-0" >
+									<div class="col-half-section col-half-section-right text-color-light">
+										<!-- <p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-secondary ms-0 me-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>Values</p> -->
+										<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-28 appear-animation animated-text1" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="text-align: center;">Our Mission</h2>
+
+
+										<span class="opacity-7 d-block">
+
+											<ul class="text-color-light pt-3 mb-0 appear-animation-light data-appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="font-size: 20px;"  >
+												<li class="glow-on-hover"><strong> Promote Excellence in Delivery:</strong> Ensure timely and reliable distribution of     
+													quality products.
+								 </li>
+												<li class="glow-on-hover"><strong> Environmental Responsibility:</strong> Implement practices that prioritize 
+													environmental stewardship.
+								 </li>
+												<li class="glow-on-hover"><strong> Build Partnerships:</strong> Foster strong, mutually beneficial relationships.</li>
+											</ul>
+											<!-- <p class="text-color-light pt-3 mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin.</p> -->
+										</span>
 									</div>
-									<div class="border-radius mb-1 border-0 card-accordion-our-services-container">
-										<div class="card-header py-2 bg-color-quaternary">
-											<h4 class="card-title m-0">
-												<a class="accordion-toggle text-color-tertiary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3Two">
-													Target Audience
-												</a>
-											</h4>
-										</div>
-										<div id="collapse3Two" class="collapse card-accordion-our-services">
-											<div class="card-body">
-												<p class="mb-0">Our target audience includes a diverse range of businesses in distribution and retail across various industries, as well as communities seeking reliable access to high-quality commodities. We serve enterprises of all sizes, from local retailers to large-scale distributors, ensuring they have the essential products needed to thrive. By focusing on reliability and diversity, we aim to positively impact both the business landscape and the communities we support.</p>
-												<!-- <a href="demo-business-consulting-2-services.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">read more +</a> -->
-											</div>
-										</div>
-									</div>
-									
-									<div class="border-radius mb-1 border-0 card-accordion-our-services-container">
-										<div class="card-header py-2 bg-color-quaternary">
-											<h4 class="card-title m-0">
-												<a class="accordion-toggle text-color-tertiary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3Four">
-													Global Logistics & Connectivity
-												</a>
-											</h4>
-										</div>
-										<div id="collapse3Four" class="collapse card-accordion-our-services">
-											<div class="card-body">
-												<p class="mb-0">SFGW leverages extensive global connections with shipping and logistics companies, enhancing our robust supplier-buyer network. This network ensures seamless coordination and efficiency in sourcing and delivering essential commodities across diverse industries. By strategically partnering with shipping and logistics experts worldwide, SFGW reinforces its capability to meet varied market demands promptly and reliably.</p>
-												<!-- <a href="demo-business-consulting-2-services.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">read more +</a> -->
-											</div>
-										</div>
-									</div>
-									
 								</div>
-
-								<!-- <a href="demo-business-consulting-2-services.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold mt-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">FIND OUT MORE</a> -->
-							</div>	
+							</section>
 						</div>
-					</div>
-				</section>
 
-<!-- slider of products inserted -->
-<section class="section section-height-4 section-with-shape-divider bg-color-grey-scale-1 border-0 pb-5 m-0">
-	<div class="shape-divider" style="height: 123px;">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 123" preserveAspectRatio="xMinYMin">
-			<polygon fill="#F3F3F3" points="0,90 221,60 563,88 931,35 1408,93 1920,41 1920,-1 0,-1 "/>
-			<polygon fill="#FFFFFF" points="0,75 219,44 563,72 930,19 1408,77 1920,25 1920,-1 0,-1 "/>
-		</svg>
-	</div>
-	<div class="container mt-4">
-		<div class="row justify-content-center">
-			<div class="col-lg-11 col-xl-10 text-center">
-				<h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" style="font-size: xx-large !important;"> <strong>Products</strong></h2>
-				<h3 class="text-9 line-height-3 text-transform-none font-weight-semibold mb-4 appear-animation animated-text1" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Explore Our Product Catalog</h3>
-				<p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750"> With a focus on reliability, efficiency, and diversity, we offer a diverse range of products including<strong> Sugar, Rice, Pulses and Beans, Petrochemicals, Fertilizers, Spices, Edible oils, Wheat, Coffee & Tea, Confectionery, Animal Feeds, Dairy Products</strong> and other related products, catering to businesses worldwide.
-					
-					</p>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-				<div class="owl-carousel owl-theme custom-dots-style-1 mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 3}, '992': {'items': 3}, '1200': {'items': 5}}, 'margin': 20, 'loop': false, 'nav': false, 'dots': true}" style="height: 512px;">
-					
+						<div class="col-lg-6 p-0">
+							<section class="section section-height-3 bg-color-primary h-100 m-0 border-0" style="background-image: url('img/newimagesforagro/OurCommitment.jpg');
+							background-size: cover;
+							background-position: center;
+							background-repeat: no-repeat;">
+								<div class="row m-0">
+									<div class="col-half-section text-color-light text-end">
+										<!-- <p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="100" style="color: white !important;">Commitment<span class="line-pre-title me-0 ms-3 bg-color-secondary appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200"></span></p> -->
+										<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-28 appear-animation animated-text1" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200" style="color: white !important;text-align: center;">Our Commitment</h2>
+										<span class="opacity-7 d-block">
+											<ul class="text-color-light pt-3 mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="font-size: 20px;text-align: left;color: white !important;" >
+												<li class="glow-on-hover"><strong>Diverse Products: </strong> To maintain a diversified and high-quality product portfolio.</li>
+												<li class="glow-on-hover"><strong>Exceptional Service: </strong> To provide exceptional service and build lasting relationships with our clients.</li>
+												<li class="glow-on-hover"><strong>Commitment to Dependability: </strong> Uphold a steadfast commitment to reliability, delivering on promises with consistency and precision.</li>
+											</ul>
+											<!-- <p class="text-color-light pt-3 mb-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin.</p> -->
+										</span>
+									</div>
+								</div>
+							</section>
+						</div>
 
-					<!-- diary -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\HomePageImages\sugar.jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Sugar</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
-						<!-- </a> -->
 					</div>
-					<!-- rice -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#robert" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\HomePageImages\RiceHomePageImage.jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Rice</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
+				</div>
 
-							
-						<!-- </a> -->
-					</div>
-					<!-- grains -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#jessica" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\HomePageImages\Grains.jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Pulses and Beans</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
-						<!-- </a> -->
-					</div>
+
+
+				 <!-- till here -->
 
 				
-
-					<!-- petrochemicals -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\Imageslatestadded\Petro Chemical.jpg" class="img-fluid" alt="John Doe" />
+				<div class="container py-5 mb-3">
+					<div class="row align-items-center">
+						<div class="col-lg-5 pt-3 pt-lg-0 pb-4 pb-lg-0">
+							<!-- <div class="card border-radius-0 box-shadow-1 border-0 me-lg-3 p-3 mb-3 mb-lg-0"> -->
+								<img src="img\Imageslatestadded\Simpra Logo Updated(1).png"style="width: 320px; height: 270px; class="img-fluid border-radius-0" alt="Simpra Logo">
+							<!-- </div> -->
+						</div>
+						<div class="col-lg-7">
+							<p class="text-4 line-height-9 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">Simpra Foods Goods Wholesalers is committed to enhancing business outcomes with a strong emphasis on quality and efficiency. Our approach revolves around strategic procurement, ensuring that our products meet rigorous quality standards while maintaining competitive pricing.
+							</p>
+							<p class="text-4 line-height-9 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">We optimize operational efficiency through strategic management practices. Our dedicated team works closely with both suppliers and customers to grasp their specific needs, crafting tailored solutions that foster enduring, mutually beneficial partnerships.</p>
+							<!-- <div class="counters custom-counters mt-5 d-flex">
+								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+									<strong data-to="240" data-append="+">0</strong>
+									<label class="text-color-primary font-weight-bold">Satisfied Clients</label>
 								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Petrochemicals</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
+								<div class="counter counter-primary appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
+									<strong data-to="2000" data-append="+">0</strong>
+									<label class="text-color-primary font-weight-bold">Successfull Cases</label>
 								</div>
-							</div>
-						<!-- </a> -->
-					</div>
-
-					<!-- fertilizer -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\HomePageImages\fertiliz.jpeg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Fertilizers</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
-						<!-- </a> -->
-					</div>
-
-
-					<!-- spices -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#chris" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\HomePageImages\SpicesImages2.jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Spices</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
-						<!-- </a> -->
-					</div>
-
-
-					<!-- edible oils -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#monica" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\Imageslatestadded\Edible Oils (1).jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Edible Oils</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
-						<!-- </a> -->
-					</div>
-
-					<!-- wheat -->
-					<div>
-						<div class="card border-0">
-							<div class="card-img-top position-relative overlay">
-								<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-									<div class="custom-crooked-line">
-										<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-									</div>
-								</div>
-								<img src="img\newimagesforagro\Wheat For Home Page.jpg" class="img-fluid" alt="John Doe" />
-							</div>
-							<div class="card-body">
-								<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Wheat</h4>
-								<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-							</div>
+							</div> -->
 						</div>
 					</div>
+				</div>
 
-					
-					<!-- coffee -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\Imageslatestadded\Coffee & Tea Image (1)(1).jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Coffee/Tea</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
+				<section class="are-you-looking-for bg-color-secondary" style="margin-top: 50px !important;">
+					<div class="container">
+						<div class="row justify-content-between" >
+							<div class="col-xl-5">
+								<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>Elevate Your Trading Experience With</p>
+								<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"> Simpra Foods</br> Goods Wholesalers</h2>
+								<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today!</p>
 							</div>
-
-							<!-- new products added here -->
-							
-						<!-- </a> -->
-					</div>
-
-					<!-- confectionery -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\Imageslatestadded\Confectionery Image (1).jpeg" class="img-fluid" alt="John Doe" />
+							<!-- <div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
+								<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
+									<span>
+										<img width="16" height="25" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
+									</span>
+									<a class="text-color-light text-decoration-none" href="tel:123-456-7890"style="color: white !important;width:165px !important;">+971 4 394 8736</a>
+								</span>
+								<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 60px 80px; font-size: 16px;height: 85px;width: 70px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Contact On Whatsapp!</a>
+								<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 60px 80px; font-size: 16px;height: 65px;width: 150px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Get In Touch!</a>
+							</div> -->
+							<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
+								<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
+									<span>
+										<img width="16" height="25" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
+									</span>
+									<a class="text-color-light text-decoration-none" href="tel:123-456-7890" style="color: white !important;width:165px !important;">+971 4 394 8736</a>
+								</span>
+								<!-- <div class="d-flex">
+									<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 10px 10px; font-size: 14px; margin-right: 30px;width: 140px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Whatsapp!</a>
+									<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 10px 10px; font-size: 14px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Get In Touch!</a>
+								</div> -->
+								<div class="d-flex">
+									<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation text-center" style="padding: 10px 10px; font-size: 20px; margin-right: 30px;width: 220px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"><strong>Whatsapp!</strong></a>
+									<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation text-center" style="padding: 10px 10px; font-size: 20px;width:260px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"><strong>Get In Touch!</strong></a>
 								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Confectionery And Chocolates</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
-						<!-- </a> -->
-					</div>
-
-						<!-- animal -->
-						<div>
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\Imageslatestadded\Animal-Feed (1).jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Animal Feeds</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
-						</div>
-
-
-					<!-- diary -->
-					<div>
-						<!-- <a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus"> -->
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<!-- <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" /> -->
-										</div>
-									</div>
-									<img src="img\HomePageImages\dp2.jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Dairy Product</h4>
-									<!-- <p class="text-3-5 mb-0">CEO and Founder</p> -->
-								</div>
-							</div>
-						<!-- </a> -->
-					</div>
-
-					
-
-					
-
-
-					
-
-					
-
-					
-
-					
-					
-					<!-- <div>
-						<div class="card border-0">
-							<div class="card-img-top position-relative overlay">
-								<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-									<div class="custom-crooked-line">
-										
-									</div>
-								</div>
-								<img src="img\newimagesforagro\Maize For HOMEPAGE.jpg" class="img-fluid" alt="John Doe" />
-							</div>
-							<div class="card-body">
-								<h4 class="text-color-hover-primary text-6 mb-0" style="text-align: center;">Maize</h4>
 								
 							</div>
-						</div>
-					</div> -->
-
-
-
-				
-					<!-- <div>
-						<a href="demo-business-consulting-3-team.html#john" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
-							<div class="card border-0">
-								<div class="card-img-top position-relative overlay">
-									<div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-										<div class="custom-crooked-line">
-											<img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" />
-										</div>
-									</div>
-									<img src="img/demos/business-consulting-3/team/team-1.jpg" class="img-fluid" alt="John Doe" />
-								</div>
-								<div class="card-body">
-									<h4 class="text-color-hover-primary text-6 mb-0">John Doe</h4>
-									<p class="text-3-5 mb-0">CEO and Founder</p>
-								</div>
-							</div>
-						</a>
-					</div> -->
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-<!-- whatsapp cta -->
-<!-- <section class="are-you-looking-for bg-color-secondary" >
-	<div class="container">
-		<div class="row justify-content-between" >
-			<div class="col-xl-5">
-				<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>Elevate Your Trading Experience With</p>
-				<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"> Simpra Foods</br> Goods Wholesalers</h2>
-				<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today!</p>
-			</div>
-			<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
-				<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-					<span>
-						<img width="16" height="25" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
-					</span>
-					<a class="text-color-light text-decoration-none" href="tel:123-456-7890"style="color: white !important;width:165px !important;">+971 4 394 8736</a>
-				</span>
-				<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 60px 80px; font-size: 16px;height: 65px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Contact On Whatsapp!</a>
-				<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 60px 80px; font-size: 16px;height: 65px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Get In Touch!</a>
-			</div>
-		</div>
-	</div>
-</section> -->
-
-
-<!-- newsletter section -->
-<div class="container container-xl-custom py-5 my-3">
-
-	<div class="row">
-		<div class="col-lg-8 mb-5 mb-lg-0">
-
-			<article class="mb-5">
-				<div class="card bg-transparent border-0">
-					<div class="card-body p-0 z-index-1">
-						<a href="demo-renewable-energy-news-post.html" data-cursor-effect-hover="plus">
-							<img class="card-img-top rounded-0 mb-2" src="img\HomePageImages\80759_13_9_2023_18_7_59_1_CARDAMOMPLANT.webp" alt="Card Image">
-						</a>
-						<p class="text-uppercase text-color-default text-1 my-2">
-							<time pubdate datetime="2023-01-10">10 June 2024</time> 
-							<!-- <span class="opacity-3 d-inline-block px-2">|</span> 
-							3 Comments 
-							<span class="opacity-3 d-inline-block px-2">|</span> 
-							John Doe -->
-						</p>
-						<div class="card-body p-0">
-							<h4 class="card-title text-5 font-weight-bold pb-1 mb-2"><a class="text-color-dark text-color-hover-primary text-decoration-none" href="demo-renewable-energy-news-post.html">Higher temperatures, scanty pre-monsoon rains may take a toll on South Indian plantation crops</a></h4>
-							<p class="card-text mb-2">The higher-than-normal temperatures coupled with the scanty pre-monsoon rains are likely to take a toll on the plantation crops in South India. Almost all plantation districts...</p>
-							<a href="https://www.thehindubusinessline.com/economy/agri-business/higher-temperatures-scanty-pre-monsoon-rains-may-take-a-toll-on-south-indian-plantation-crops/article68136147.ece" class="read-more text-color-primary font-weight-semibold mt-0 text-2">Read More <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a>
+							
 						</div>
 					</div>
-				</div>
-			</article>
-
-			<!-- <article class="mb-5">
-				<div class="card bg-transparent border-0">
-					<div class="card-body p-0 z-index-1">
-						<a href="demo-renewable-energy-news-post.html" data-cursor-effect-hover="plus">
-							<img class="card-img-top rounded-0 mb-2" src="img/blog/wide/blog-41.jpg" alt="Card Image">
-						</a>
-						<p class="text-uppercase text-color-default text-1 my-2">
-							<time pubdate datetime="2023-01-10">10 Jan 2023</time> 
-							<span class="opacity-3 d-inline-block px-2">|</span> 
-							3 Comments 
-							<span class="opacity-3 d-inline-block px-2">|</span> 
-							John Doe
-						</p>
-						<div class="card-body p-0">
-							<h4 class="card-title text-5 font-weight-bold pb-1 mb-2"><a class="text-color-dark text-color-hover-primary text-decoration-none" href="demo-renewable-energy-news-post.html">How to Grow your Business</a></h4>
-							<p class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem , consectetur adipiscing elit...</p>
-							<a href="demo-renewable-energy-news-post.html" class="read-more text-color-primary font-weight-semibold mt-0 text-2">Read More <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a>
-						</div>
-					</div>
-				</div>
-			</article> -->
-
-			<ul class="pagination pagination-rounded pagination-md justify-content-center">
-				<li class="page-item"><a class="page-link" href="#" data-cursor-effect-hover="fit"><i class="fas fa-angle-left"></i></a></li>
-				<li class="page-item active"><a class="page-link" href="#" data-cursor-effect-hover="fit">1</a></li>
-				<li class="page-item"><a class="page-link" href="#" data-cursor-effect-hover="fit">2</a></li>
-				<!-- <li class="page-item"><a class="page-link" href="#" data-cursor-effect-hover="fit">3</a></li> -->
-				<li class="page-item"><a class="page-link" href="#" data-cursor-effect-hover="fit"><i class="fas fa-angle-right"></i></a></li>
-			</ul>
-
-		</div>
-		<div class="blog-sidebar col-lg-4 pt-4 pt-lg-0">
-			<aside class="sidebar">
-				<!-- <div class="px-3 mb-4">
-					<h3 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3">About The Blog</h3>
-					<p class="m-0">Lorem ipsum dolor sit amet, conse elit porta. Vestibulum ante justo, volutpat quis porta diam.</p>
-				</div> -->
-				<!-- <div class="py-1 clearfix"> -->
-					<!-- <hr class="my-2"> -->
-				<!-- </div> -->
-				<!-- <div class="px-3 mt-4"> -->
-					<!-- <form action="page-search-results.html" method="get">
-						<div class="input-group mb-3 pb-1">
-							<input class="form-control box-shadow-none text-1 border-0 bg-color-grey" placeholder="Search..." name="s" id="s" type="text">
-							<button type="submit" class="btn bg-color-grey text-1 p-2"><i class="fas fa-search m-2"></i></button>
-						</div>
-					</form> -->
-				<!-- </div> -->
-				<!-- <div class="py-1 clearfix">
-					<hr class="my-2">
-				</div> -->
-				<div class="px-3 mt-4">
-					<h3 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3">Recent News</h3>
-					<div class="pb-2 mb-1">
-						<a href="https://www.thehindubusinessline.com/economy/agri-business/spices-exporters-forum-allay-concerns-over-ethylene-oxide-usage/article68135567.ece" class="text-color-default text-uppercase text-1 mb-0 d-block text-decoration-none">10 Jan 2024 <span class="opacity-3 d-inline-block px-2">|</span> Read More </a> 
-						<a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Spices exporters forum allays concerns over ethylene oxide usage</a>
-						<a href="https://www.fao.org/markets-and-trade/commodities/tea/fao-intergovernmental-group-on-tea/en/" class="text-color-default text-uppercase text-1 mb-0 d-block text-decoration-none">10 Mar 2024 <span class="opacity-3 d-inline-block px-2">|</span> Read More </a>
-						<a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">FAO Intergovernmental Group on Tea</a>
-						<!-- <a href="#" class="text-color-default text-uppercase text-1 mb-0 d-block text-decoration-none">10 Jan 2023 <span class="opacity-3 d-inline-block px-2">|</span> Read More </a> -->
-						<!-- <a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Vivamus sollicitudin nibh luctus</a> -->
-					</div>
-				</div>
-				<!-- <div class="py-1 clearfix">
-					<hr class="my-2">
-				</div>
-				<div class="px-3 mt-4">
-					<h3 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3">Recent Comments</h3>
-					<div class="pb-2 mb-1">
-						<a href="#" class="text-color-default text-2 mb-0 d-block text-decoration-none line-height-4">Admin on <strong class="text-color-dark text-hover-primary text-4">Vivamus sollicitudin</strong> <span class="text-uppercase text-1 d-block pt-1 pb-3">10 Jan 2023</span></a>
-						<a href="#" class="text-color-default text-2 mb-0 d-block text-decoration-none line-height-4">John Doe on <strong class="text-color-dark text-hover-primary text-4">Lorem ipsum dolor</strong> <span class="text-uppercase text-1 d-block pt-1 pb-3">10 Jan 2023</span></a>
-						<a href="#" class="text-color-default text-2 mb-0 d-block text-decoration-none line-height-4">Admin on <strong class="text-color-dark text-hover-primary text-4">Consectetur adipiscing</strong> <span class="text-uppercase text-1 d-block pt-1 pb-3">10 Jan 2023</span></a>
-					</div>
-				</div>
-				<div class="py-1 clearfix">
-					<hr class="my-2">
-				</div>
-				<div class="px-3 mt-4">
-					<h3 class="text-color-dark text-capitalize font-weight-bold text-5 m-0">Categories</h3>
-					<ul class="nav nav-list flex-column mt-2 mb-0 p-relative right-9">
-						<li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Design (2)</a></li>
-						<li class="nav-item">
-							<a class="nav-link bg-transparent border-0 active" href="#">Photos (4)</a>
-							<ul>
-								<li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Animals</a></li>
-								<li class="nav-item"><a class="nav-link bg-transparent border-0 active" href="#">Business</a></li>
-								<li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Sports</a></li>
-								<li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">People</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Videos (3)</a></li>
-						<li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Lifestyle (2)</a></li>
-						<li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Technology (1)</a></li>
-					</ul>
-				</div> -->
-			</aside>
-		</div>
-	</div>
-
-</div>
-<!-- till here -->
-				<!-- section slider inserted here -->
-<!-- benefits section -->
-<section class="section section-height-4 section-with-shape-divider position-relative bg-dark border-0 m-0">
-	<div class="shape-divider shape-divider-reverse-x z-index-3" style="height: 102px;">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 102" preserveAspectRatio="xMinYMin">
-			<polygon fill="#F3F3F3" points="0,65 220,35 562,63 931,10 1410,68 1920,16 1920,103 0,103 "/>
-			<polygon fill="#EDEDED" points="0,82 219,51 562,78 931,26 1409,83 1920,32 1920,103 0,103 "/>
-		</svg>
-	</div>
-	<!-- <div class="position-absolute top-0 left-0 h-100 d-none d-lg-block overlay overlay-show overlay-color-primary" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img/demos/business-consulting-3/parallax/parallax-1.jpg" style="width: 40%;"> -->
-		<!-- <div class="col-lg-6">
-			<h2 class="custom-text-background custom-big-font-size-1 text-15 font-weight-bold float-end clearfix line-height-1 lazyload pe-xl-5 me-3 mb-0 d-none d-lg-block vertical-text" style="color:#FBA834;"
-				data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'horizontal': true, 'transitionDuration': 1000, 'isInsideSVG': true}">
-				<span>W</span>
-				<span>H</span>
-				<span>Y</span>
-				<span> </span>
-				<span>U</span>
-				<span>S</span>
-			</h2>
-		</div> -->
-	<!-- </div> -->
-	<div class="container position-relative z-index-3 pt-5 mt-5">
-		
-		<div class="row align-items-center">
-			<!-- <div class="col-lg-6">
-				<h2 class="custom-text-background custom-big-font-size-1 text-15 font-weight-bold float-end clearfix line-height-1 lazyload pe-xl-5 me-3 mb-0 d-none d-lg-block" style="color:#FBA834;"
-				 data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'horizontal': true, 'transitionDuration': 1000, 'isInsideSVG': true}">WHY </br> US</h2>
-			</div> -->
-			<!-- <div class="col-lg-5 me-lg-3 ">
-				<h2 class="custom-text-background custom-big-font-size-1 text-15 font-weight-bold float-end clearfix line-height-1 lazyload pe-xl-5 me-3 mb-0 d-none d-lg-block vertical-text" style="color:#FBA834;"
-					data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'horizontal': true, 'transitionDuration': 1000, 'isInsideSVG': true}">
-					<span>W</span>
-					<span>H</span>
-					<span>Y</span>
-					<span> </span>
-					<span>U</span>
-					<span>S</span>
-				</h2>
-			</div> -->
-			<div class="col-lg-6"style="width: 100%; text-align: center;">
-				<!-- <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" >WHY US</h2> -->
-				<h3 class="text-9 line-height-3 text-transform-none font-weight-bold text-color-light ls-0 mb-3 pb-1 appear-animation animated-text2" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="color: white !important;">What Makes Us Unique From Our Competitors</h3>
-				<p class="text-4 pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" style="color:white;" >Our clients' success is our mission, and that's why we deliver exceptional results with</br> unwavering reliability and a dedication to operational excellence. </p>
-				<ul class="list ps-0 pe-lg-5 mb-0">
-					<li class="d-flex align-items-start  pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
-						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-						<span class="text-4 ps-3">Certified Suppliers: We collaborate with certified suppliers, ensuring reliability, diversity and trustworthiness.</span>
-					</li>
-					<li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i> 
-						<span class="text-4 ps-3">Global Connectivity: We leverage global connections with shipping and logistics companies for connectivity.</span>
-					</li>
-
-					<!-- <li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
-						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-						<span class="text-3-5 ps-3">Global Connectivity: We leverage global connections with shipping and logistics companies to ensure worldwide connectivity.</span>
-
-					</li> -->
-
-					<li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">
-						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-						<span class="text-4 ps-3">Premium Quality: Our products meet rigorous quality standards.
-
-						</span>
-					</li>
-
-					<li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">
-						<i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-						<span class="text-4 ps-3">Integrity in Business: Upholding unwavering integrity in every facet of our business operations.
-
-						</span>
-					</li>
-				
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- grid format -->
-
-<!--  -->
-<!-- till here benefits -->
-
-<!-- 
-				<section class="real-word-stories bg-color-quaternary overflow-hidden p-relative pb-4">
-					<div class="container py-xl-5">
-						<div class="row justify-content-between align-items-center pt-5 py-xl-5 mt-3">
-							<div class="col-xl-6 mb-5 pb-5 mb-xl-0 pb-xl-0">
-								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-									<div class="owl-carousel owl-theme m-0" data-plugin-options="{'items': 1, 'autoplay': false, 'animateOut': 'fadeOut', 'autoHeight': true}">
-										<div class="custom-testimonial-container bg-color-light">
-											<div class="testimonial custom-testimonial testimonial-style-2 mb-0">
-												
-												<blockquote class="px-0 pb-5">
-												
-												</blockquote>
-												<div class="testimonial-arrow-down"></div>
-												<div class="testimonial-author d-flex flex-row justify-content-start align-items-center">
-													<img src="img/avatars/avatar-3.jpg" class="img-fluid rounded-circle m-0 me-3" alt="">
-													<p><strong class="font-weight-extra-bold text-start text-color-secondary mb-1">John Anderson</strong><span class="text-uppercase text-start">CEO of Fresh Fields Market</span></p>
-												</div>
-											</div>
-										</div>
-										<div class="custom-testimonial-container bg-color-light">
-											<div class="testimonial custom-testimonial testimonial-style-2 mb-0">
-												
-												<blockquote class="px-0 pb-5">
-													
-													<p class="mb-0 text-start text-3">"Simpra Foods exceeds our expectations with their extensive product line and strict quality controls. Their expertise and innovative approach simplify our procurement, saving us time and money. We highly recommend Simpra Foods for reliable, high-quality agricultural products."</p>
-												</blockquote>
-												<div class="testimonial-arrow-down"></div>
-												<div class="testimonial-author d-flex flex-row justify-content-start align-items-center">
-													<img src="img/avatars/avatar-2.jpg" class="img-fluid rounded-circle m-0 me-3" alt="">
-													<p><strong class="font-weight-extra-bold text-start text-color-secondary mb-1">Emily Martinez</strong><span class="text-uppercase text-start">Procurement Manager at Green Earth Grocers</span></p>
-												</div>
-											</div>
-										</div>
-										<div class="custom-testimonial-container bg-color-light">
-											<div class="testimonial custom-testimonial testimonial-style-2 mb-0">
-												
-												<blockquote class="px-0 pb-5">
-													
-													<p class="mb-0 text-start text-3">"Simpra Foods is invaluable to our farm-to-table restaurant. Their commitment to sustainability and community support is admirable. The freshness and quality of their products have elevated our recipes, earning us great reviews. Their customer-centric approach sets them apart."</p>
-												</blockquote>
-												<div class="testimonial-arrow-down"></div>
-												<div class="testimonial-author d-flex flex-row justify-content-start align-items-center">
-													<img src="img/avatars/avatar-4.jpg" class="img-fluid rounded-circle m-0 me-3" alt="">
-													<p><strong class="font-weight-extra-bold text-start text-color-secondary mb-1">David Lee</strong><span class="text-uppercase text-start">Owner of Farm-to-Table Bistro</span></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-5 mb-5 mb-xl-0">
-								<p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300"><span class="line-pre-title bg-color-primary"></span>Real World Stories</p>
-								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 custom-letter-spacing-2 custom-text-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Our Successful Cases</h2>
-								<p class="font-weight-semibold mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500">At Simpra Foods, we proudly deliver successful solutions across diverse agricultural sectors, improving supply chains, increasing product quality, and encouraging long-term growth for our clients.</p>
-								
-							</div>
-						</div>
-					</div>
-				</section> -->
-
-				<!-- whatsapp cta -->
-<section class="are-you-looking-for bg-color-secondary" style="margin-top: 50px !important;">
-	<div class="container">
-		<div class="row justify-content-between" >
-			<div class="col-xl-5">
-				<p class="text-uppercase font-weight-semibold mb-1 text-color-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" style="color: white !important;"><span class="line-pre-title bg-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></span>Elevate Your Trading Experience With</p>
-				<h2 class="text-color-light font-weight-bold text-capitalize mb-1 letter-spacing-08 font-size-32 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" style="color: white !important;"> Simpra Foods</br> Goods Wholesalers</h2>
-				<p class="font-weight-semibold text-color-light mb-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" style="color: white !important;">Contact With Our Experts Today!</p>
-			</div>
-			<!-- <div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
-				<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-					<span>
-						<img width="16" height="25" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
-					</span>
-					<a class="text-color-light text-decoration-none" href="tel:123-456-7890"style="color: white !important;width:165px !important;">+971 4 394 8736</a>
-				</span>
-				<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 60px 80px; font-size: 16px;height: 85px;width: 70px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Contact On Whatsapp!</a>
-				<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 60px 80px; font-size: 16px;height: 65px;width: 150px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Get In Touch!</a>
-			</div> -->
-			<div class="col-xl-6 d-flex align-items-start align-items-sm-center justify-content-start justify-content-xl-end mt-4 mt-xl-0 flex-column flex-sm-row">
-				<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-					<span>
-						<img width="16" height="25" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
-					</span>
-					<a class="text-color-light text-decoration-none" href="tel:123-456-7890" style="color: white !important;width:165px !important;">+971 4 394 8736</a>
-				</span>
-				<!-- <div class="d-flex">
-					<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 10px 10px; font-size: 14px; margin-right: 30px;width: 140px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Whatsapp!</a>
-					<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation" style="padding: 10px 10px; font-size: 14px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Get In Touch!</a>
-				</div> -->
-				<div class="d-flex">
-					<a href="https://wa.me/97143948736" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation text-center" style="padding: 10px 10px; font-size: 20px; margin-right: 30px;width: 220px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"><strong>Whatsapp!</strong></a>
-					<a href="demo-business-consulting-2-contact-us.html" class="btn btn-primary custom-btn text-center text-uppercase text-decoration-none border-0 py-0 px-5 font-weight-semibold appear-animation text-center" style="padding: 10px 10px; font-size: 20px;width:260px;" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600"><strong>Get In Touch!</strong></a>
-				</div>
-				
-			</div>
-			
-		</div>
-	</div>
-</section>
-
-				<!-- <section class="our-blog">
-					<div class="container">
-						<div class="row mt-3 pt-5">
-							<div class="col">
-								<p class="text-uppercase font-weight-semibold mb-1 text-color-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"><span class="line-pre-title bg-color-primary"></span>our blog</p>
-								<h2 class="text-color-secondary font-weight-bold text-capitalize mb-4 custom-letter-spacing-2 custom-text-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">News and Articles</h2>
-							</div>
-						</div>
-						<div class="row mb-3 pb-5">
-							<div class="col">
-								<div class="row">
-									<div class="col-lg-6 mb-4 mb-lg-0">
-										<article>
-											<div class="card border-0 border-radius-0 box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
-												<div class="card-body p-4 z-index-1">
-													<a href="demo-business-consulting-2-blog-post.html">
-														<img class="card-img-top border-radius-0" src="img/demos/business-consulting-2/blog/blog-1.png" alt="Card Image">
-													</a>
-													<p class="text-uppercase text-1 mb-3 pt-1 text-color-default"><time pubdate datetime="2023-01-10">10 Jan 2023</time> <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</p>
-													<div class="card-body p-0">
-														<h4 class="card-title mb-3 text-5 font-weight-bold"><a class="text-color-secondary" href="demo-business-consulting-2-blog-post.html">An Interview with John Doe</a></h4>
-														<p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p>
-														<a href="demo-business-consulting-2-blog-post.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">Read More +</a>
-													</div>
-												</div>
-											</div>
-										</article>
-									</div>
-									<div class="col-lg-6">
-										<article>
-											<div class="card border-0 border-radius-0 box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-												<div class="card-body p-4 z-index-1">
-													<a href="demo-business-consulting-2-blog-post.html">
-														<img class="card-img-top border-radius-0" src="img/demos/business-consulting-2/blog/blog-2.png" alt="Card Image">
-													</a>
-													<p class="text-uppercase text-1 mb-3 pt-1 text-color-default"><time pubdate datetime="2023-01-10">10 Jan 2023</time> <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</p>
-													<div class="card-body p-0">
-														<h4 class="card-title mb-3 text-5 font-weight-bold"><a class="text-color-secondary" href="demo-business-consulting-2-blog-post.html">How to Grow your Business</a></h4>
-														<p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p>
-														<a href="demo-business-consulting-2-blog-post.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">Read More +</a>
-													</div>
-												</div>
-											</div>
-										</article>
-									</div>									
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> -->
+				</section>		
 
 			</div>
 
