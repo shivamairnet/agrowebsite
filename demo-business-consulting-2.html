@@ -153,7 +153,7 @@
 }
 
 .text-4:hover {
-			color: #FBA834; /* Change to desired hover color */
+			color: #FBA834 !important; /* Change to desired hover color */
 		}
 
 		.text-3-5 {
@@ -163,6 +163,20 @@
             text-transform: none; /* Ensure text is displayed as typed */
         }
 
+		@media (max-width: 768px) {
+    .span-text {
+        font-size:14px !important;
+    }
+
+	.img-header{
+		height: 35px;
+		width: 35px;
+	}
+
+	.header-nav-features-toggle .fas.fa-search {
+		display:none;
+	}
+}
 
 		
 @media only screen and (max-width: 768px) {
@@ -191,22 +205,7 @@
         line-height: 1.5; /* Adjust this value as needed */
     }
 
-	@media (max-width: 768px) {
-    .span-text {
-        font-size:small !important;
-    }
-
-	.img-header{
-		height: 35px;
-		width: 35px;
-	}
-
-	.header-nav-features-toggle .fas.fa-search {
-		display:none;
-	}
-}
-
-@media (max-width: 576px) {
+	@media (max-width: 576px) {
     .col-xl-6.d-flex {
         flex-direction: column !important;
         align-items: center !important;
@@ -243,6 +242,36 @@
     }
 }
 
+/* @media (max-width: 768px) {
+ 
+
+  .our-services {
+    background-image: url('img/HomePageImages/goal.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+} */
+
+
+
+	@media (max-width: 768px) {
+        .col-lg-6 {
+            width: 100%;
+            text-align: center;
+        }
+        .list {
+            padding-left: 0;
+            margin-left: 0;
+        }
+        .list li {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 1rem; /* Adjust as needed */
+        }
+        .list li .text-4 {
+            margin-left: 0.7rem; /* Adjust as needed */
+        }
+    }
 		</style>
 		
 	</head>
@@ -1385,7 +1414,8 @@
 					<div class="row py-5 custom-row-footer">
 						<div class="col-12 col-sm-12 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
 							<img width="130" height="110" src="img\HomePageImages\SimpraLogoUpdated(1).png" alt="Logo Footer" style="margin-bottom: 10px;">
-							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods Wholesalers,</br>								Office 3007 & 3008, Mazaya Business Ave., AA1 Tower, JLT, PO Box 391935, Dubai-UAE
+							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Foods Goods Wholesalers,</br>
+								Office 3007 & 3008, Mazaya Business Ave., AA1 Tower, JLT, PO Box 391935, Dubai-UAE
 							
 								</p>
 						</div>
