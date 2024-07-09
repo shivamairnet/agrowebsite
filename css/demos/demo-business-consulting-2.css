@@ -517,14 +517,16 @@ html[dir="rtl"] .slider-container .line-pre-title {
 
 @media (min-width: 1200px) {
 		.our-services {
-				min-height: 200px;
+				min-height: 150px !important;
+					
+				
 		}
 }
 
-@media (max-width: 991px) {
-		.our-services {
+@media (max-width: 1200px) {
+		/* .our-services {
 				background: none !important;
-		}
+		} */
 }
 
 .our-services:after {
