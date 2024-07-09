@@ -711,9 +711,9 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		padding: 70px 0;
 }
 
-.are-you-looking-for .are-you-looking-for-phone {
+/* .are-you-looking-for .are-you-looking-for-phone {
 		margin-right: 37px;
-}
+} */
 
 .are-you-looking-for .are-you-looking-for-phone > span {
 		width: 48px;
@@ -723,6 +723,7 @@ html[dir="rtl"] .slider-container .line-pre-title {
 		border-radius: 50%;
 		text-align: center;
 		margin-right: 8px;
+		margin-left: 8px;
 }
 
 /*

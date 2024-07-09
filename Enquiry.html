@@ -169,6 +169,7 @@
     width: 350px; /* Adjust width as needed */
     height: 400px; /* Adjust height as needed */
 	background-repeat: no-repeat;
+	align-items: center;
 		}
 
 		/* @media (min-width: 768px) {
@@ -178,6 +179,30 @@
 		} */
 
 		@media (max-width: 768px) {
+    .vector-container {
+        
+        align-items: center !important; /* Center items vertically */
+        justify-content: center !important; /* Center items horizontally if needed */
+    }
+
+    .vector-image {
+		align-items: center !important;
+        margin-left: 60px !important;
+        margin-right: 60px !important;
+        /* align-self: center !important; */
+        margin-top: 80px;
+        margin-bottom: -80px;
+        background-image: url('img/HomePageImages/flat-design-illustration-customer-support.png');
+        background-size: contain;
+        width: 350px;
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+		@media (max-width: 990px) {
     .span-text {
         font-size:14px !important;
     }
@@ -191,7 +216,7 @@
 		display:none;
 	}
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .col-xl-6.d-flex {
         flex-direction: column !important;
         align-items: center !important;
@@ -207,7 +232,8 @@
     }
 
 	.are-you-looking-for-phone {
-        display: flex !important;
+        /* display: flex !important; */
+		margin-right: 0;
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
@@ -436,7 +462,7 @@
 
 					<div class="container container-xl-custom">
 						<div class="row mt-2 pt-3 justify-content-between">
-							<div class="col-lg-5 text-color-light">
+							<div class="col-lg-5 text-color-light vector-container">
 								<!-- <h4 class="text-primary text-3 font-weight-bold mb-2">GET IN TOUCH</h4> -->
 								<!-- <h2 class="mb-3 text-color-light animated-text" style="color: #0C72B8 !important;"><strong>Feel Free To Contact Us.<br>Feel Free To Enquire!</strong></h2> -->
 								<h2 class="text-color-light font-weight-bold text-10 negative-ls-05 line-height-1 mb-5 animated-text" style="color:black !important;margin-bottom: 5px !important;">GET IN TOUCH</h2>
